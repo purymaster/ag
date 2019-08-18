@@ -1,0 +1,560 @@
+﻿@charset "utf-8";
+
+/*********************************************************************** 
+mobile
+***********************************************************************/
+@media only screen and (min-width :0px) and (max-width : 1279px) {
+
+/* 컨텐츠 영역 */
+section {padding-left:0; padding-top:60px;}
+section .tit {height:auto; border-bottom:3px solid #b58913;}
+section .tit > div {padding:30px 20px; height:auto; width:calc(100% - 40px);}
+section .tit > div h2 {font-size:30px; font-weight:700; color:#936d07;}
+section .tit > div p {padding-top:12px; font-size:13px; font-weight:300; color:#666; line-height:20px;}
+section .cont {min-height:0; border-left:none;}
+section .cont > div {width:auto; padding:50px 20px;}
+
+/* footer(모바일) */
+footer {text-align:center; font-size:13px; font-weight:300; border-top:1px solid #e7e7e7; padding:30px 0;}
+footer ul,
+footer dl {overflow:hidden; padding-bottom:15px; line-height:15px;}
+footer ul li,
+footer dl dt,
+footer dl dd {display:inline; color:#909090;}
+footer ul li {padding:0 10px;border-right:1px solid #c8c8c8;}
+footer ul li:last-child {border-right:none;}
+footer ul li a {display:inline-block; font-size:13px; color:#666;}
+footer .sns li {padding-left:0; border-right:none;}
+footer .sns li:last-child {padding-right:0;}
+footer .sns li a {width:30px; height:30px; text-indent:-9999px; background:red; background-size:30px 30px;}
+footer .sns li:nth-child(1) a {background:url(../img/ico/ico_fb_gnb.png) no-repeat;} /* 페이스북 */
+footer .sns li:nth-child(2) a {background:url(../img/ico/ico_pin_gnb.png) no-repeat;} /* 핀터레스트 */
+footer .sns li:nth-child(3) a {background:url(../img/ico/ico_ins_gnb.png) no-repeat;} /* 인스타그램 */
+footer .info {}
+footer .info dt {padding-right:3px;}
+footer .info dd {padding-right:15px;}
+footer .info dt.last:before {display:block; content:" "; height:0;}
+footer .copyright {color:#909090;}
+
+/*
+/////////////////
+// 내부 컨텐츠 //
+/////////////////
+*/
+
+/* 하단 3단 버튼 */
+section .cont > div > div .btn_area div {width:100%;}
+section .cont > div > div .btn_area div a,
+section .cont > div > div .btn_area div button {font-size:12px; height:33px; line-height:33px; margin-left:6px; float:left; padding:0; min-width:0;}
+section .cont > div > div .btn_area div a:first-child,
+section .cont > div > div .btn_area div button:first-child {margin-left:0;}
+section .cont > div > div .must {width:6px; background-size:4px 5px;}
+
+section .cont > div > div .btn_area.btn1 button,
+section .cont > div > div .btn_area.btn1 a {width:100%;}
+
+section .cont > div > div .btn_area.btn2 button,
+section .cont > div > div .btn_area.btn2 a {width:calc(50% - 3px);}
+
+section .cont > div > div .btn_area.btn3 button,
+section .cont > div > div .btn_area.btn3 a {width:calc(33.33% - 4px);}
+
+/* 탭메뉴 */
+section .cont > div .tab_menu li {width:calc(50% - 5px) !important; margin-right:10px; padding-bottom:15px;}
+section .cont > div .tab_menu li:nth-child(even) {margin-right:0;}
+section .cont > div .tab_menu li a {height:24px; display:inline-block; width:100%; text-align:center; font-size:12px; color:#666; font-weight:300; border-bottom:1px solid #c8c8c8;}
+section .cont > div .tab_menu li a:hover,
+section .cont > div .tab_menu li a:focus,
+section .cont > div .tab_menu li.on a {height:23px; color:#b58913; font-size:12px; font-weight:500; border-bottom:2px solid #b58913;}
+
+/* 작은 탭메뉴 */
+section .cont > div .tab_menu.small li a {font-size:10px; height:19px;}
+section .cont > div .tab_menu.small li a:hover,
+section .cont > div .tab_menu.small li a:focus,
+section .cont > div .tab_menu.small li.on a {height:18px; color:#b58913; font-size:10px; font-weight:300; border-bottom:2px solid #b58913;}
+section .cont > div .board ul {border-top:1px solid #c8c8c8; border-bottom:1px solid #c8c8c8;}
+section .cont > div .board ul li {text-align:center; border-bottom:1px solid #e7e7e7; padding:17px 0;}
+section .cont > div .board ul li:last-child {border-bottom:none;}
+section .cont > div .board ul li span {display:inline-block; font-size:15px; color:#333; height:15px; line-height:15px; font-weight:300; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+section .cont > div .board ul li span a {font-size:15px; color:#333;}
+section .cont > div .board ul li span a:hover, 
+section .cont > div .board ul li span a:focus, 
+section .cont > div .board ul li span a:active {font-size:15px; color:#b58913;}
+section .cont > div .board ul li .text_num {width:13%;}
+section .cont > div .board ul li .text_title {width:calc(56% - 40px); padding:0 20px;}
+section .cont > div .board ul li .text_view {width:15%;}
+section .cont > div .board ul li .text_date {width:15%;}
+
+/* 제목, 리스트 기본 가이드 */
+section .cont > div > div h3 {font-size:18px; font-weight:500;}
+
+/* 게시판 기본형(공지사항) LIST */
+section .cont > div .board ul {border-top:2px solid #666; border-bottom:none;}
+section .cont > div .board ul li {text-align:left; border-bottom:1px solid #e7e7e7; padding:20px 0 !important; height:auto; line-height:0;}
+section .cont > div .board ul li:last-child {border-bottom:1px solid #e7e7e7;}
+section .cont > div .board ul li span {display:inline-block; font-size:13px; color:#333; height:15px; line-height:15px; font-weight:500; text-overflow:clip; white-space:normal; overflow:visible;}
+section .cont > div .board ul li span a {font-size:13px; color:#333;}
+section .cont > div .board ul li span a:hover, 
+section .cont > div .board ul li span a:focus, 
+section .cont > div .board ul li span a:active {font-size:13px; color:#b58913;}
+section .cont > div .board ul li .text_num {width:30px; float:left; margin-top:1px;}
+section .cont > div .board ul li .text_title {width:calc(100% - 30px); padding:0; float:left; display:table; line-height:18px; text-align:justify;}
+section .cont > div .board ul li .text_view {width:auto; display:none;}
+section .cont > div .board ul li .text_date {width:auto; margin:15px 0 0 30px; font-size:11px; font-weight:300; color:#666;}
+section .cont > div .board ul li.no_text {font-size:13px; color:#333; text-align:center;}
+
+/* 게시판 QNA LIST */
+section .cont > div .board.qna ul li .text_view {display:inline-block; font-weight:500; color:#909090; width:auto; font-size:11px; margin:15px 0 0 30px;}
+section .cont > div .board.qna ul li .text_view.reply {color:#00b76c;}
+section .cont > div .board.qna ul li .text_date {margin-left:15px;}
+
+/* 게시판 교육후기 LIST */
+section .cont > div .board.review ul li .text_title {width:calc(100% - 46px); padding:0; float:left; display:table; line-height:18px; text-align:justify;}
+section .cont > div .board.review ul li .text_sec {float:left; display:inline-block; width:16px; height:12px; text-indent:-9999px; background:url(../img/ico/ico_unsec_qna.png) no-repeat; background-size:11px 12px; margin-top:3px; padding-left:0;}
+section .cont > div .board.review ul li .text_sec.secret {background:url(../img/ico/ico_sec_qna.png) no-repeat; background-size:11px 12px;}
+section .cont > div .board.review ul li .text_view {display:inline-block; float:right; margin-top:15px; width:auto;}
+section .cont > div .board.review ul li .text_view img {width:64px; height:10px;}
+
+/* 게시판 QNA VIEW */
+section .cont > div .board_view.qna .qna_box {padding:0;}
+section .cont > div .board_view.qna .qna_box .que dt {display:none;}
+section .cont > div .board_view.qna .qna_box .que dd {float:none; display:block; width:auto; padding:25px 0;}
+section .cont > div .board_view.qna .qna_box .que dd div p,
+section .cont > div .board_view.qna .qna_box .ans dd div p {font-size:13px; line-height:21px;}
+section .cont > div .board_view.qna .qna_box .ans dt {width:15px; height:15px; top:14px; left:14px; background-size:15px 15px;}
+section .cont > div .board_view.qna .qna_box .ans dd {padding:61px 25px 15px 14px;}
+section .cont > div .board_view.qna .qna_box .ans dd strong {font-size:13px; top:14px; left:38px;}
+
+/* 게시판 교육신청 LIST */
+section .cont > div .board.edu ul li {position:relative;}
+section .cont > div .board.edu ul li dl {}
+section .cont > div .board.edu ul li dl dt {display:inline-block; float:left;}
+section .cont > div .board.edu ul li dl dt:nth-child(1),
+section .cont > div .board.edu ul li dl dt:nth-child(9) {display:none;}
+section .cont > div .board.edu ul li dl dd:nth-child(even) {width:calc(100% - 60px); font-size:11px; line-height:23px; height:auto;}
+section .cont > div .board.edu ul li dl dt:nth-child(odd) {width:60px; font-size:13px; font-weight:500; line-height:23px;}
+section .cont > div .board.edu ul li dl dd:nth-child(2) {width:100%; font-size:15px; color:#333; font-weight:500; text-overflow:clip; white-space:normal; overflow:visible; height:auto; line-height:18px; float:none; margin-bottom:17px;}
+section .cont > div .board.edu ul li dl dd a,
+section .cont > div .board.edu ul li dl dd strong {position:absolute; bottom:60px; right:0; font-size:12px; width:60px; text-align:center;}
+
+/* 게시판 교육신청 완료 */
+section .cont > div .edu.comp .complete {background:url(../img/ico/ico_comp_edu.png) no-repeat center 37px; background-size:70px 53px; padding:120px 0 25px 0; text-align:center;}
+section .cont > div .edu.comp .complete strong {font-size:17px; line-height:22px;}
+section .cont > div .edu.comp .complete strong span {font-size:17px; line-height:22px;}
+section .cont > div .edu.comp .complete p {font-size:13px; line-height:19px; margin-top:10px;}
+
+/* 페이징 및 등록버튼 영역 */
+section .cont > div .board_lower {position:relative; min-height:100px;}
+section .cont > div .board_lower .btn_area {position:absolute; margin-top:65px; width:100%;}
+section .cont > div .board_lower .btn_area a {font-size:12px; color:#fff; font-weight:500; text-align:center; background:#b58913; height:33px; line-height:33px; width:100%; padding:0; float:none;}
+section .cont > div .board_lower .paging > a {float:left; display:inline-block; width:23px; height:23px; line-height:23px; border:1px solid #e7e7e7; text-indent:-9999px; margin-right:5px;}
+section .cont > div .board_lower .paging > a:last-child {margin-right:0;}
+section .cont > div .board_lower .paging ul {float:left; display:inline-block; margin:0 12px 0 8px; overflow:hidden;}
+section .cont > div .board_lower .paging ul li {float:left; margin-right:5px;}
+section .cont > div .board_lower .paging ul li a {display:inline-block; width:23px; height:23px; line-height:23px; border:1px solid #e7e7e7; color:#666; font-size:13px; font-weight:300; text-align:center;}
+section .cont > div .board_lower .paging ul li a:hover,
+section .cont > div .board_lower .paging ul li a:focus,
+section .cont > div .board_lower .paging ul li a:active {border:1px solid #b58913; color:#b58913;}
+section .cont > div .board_lower .paging ul li strong {display:inline-block; width:25px; height:25px; line-height:25px; border:none; background:#b58913; color:#fff; font-size:13px; font-weight:300; text-align:center;}
+section .cont > div .board_lower .paging ul li:last-child {margin-right:0;}
+
+/* 게시판 기본형(공지사항) VIEW */
+section .cont > div .board_view .view_header {padding:20px 0; border-top:2px solid #666;}
+section .cont > div .board_view .view_header h3 {font-size:18px; font-weight:700; color:#333; margin-bottom:15px; line-height:24px;}
+section .cont > div .board_view .view_header > dl {}
+section .cont > div .board_view .view_header > dl dt {font-size:12px;}
+section .cont > div .board_view .view_header > dl dd {font-size:12px;}
+section .cont > div .board_view .view_header > dl dt.name + dd {padding-left:0;}
+section .cont > div .board_view .view_text {border-bottom:none; padding:30px 0 40px 0;}
+section .cont > div .board_view .view_text p {font-size:13px; line-height:24px;}
+section .cont > div .board_view .view_nav dl {margin-top:0;}
+section .cont > div .board_view .view_nav dt {width:59px; height:38px; line-height:38px; padding:0; font-size:13px; font-weight:500; color:#333; background-image:none; border:1px solid #c8c8c8; text-align:center;}
+section .cont > div .board_view .view_nav dd {width:calc(100% - 80px); height:38px; line-height:38px; border-right:none; padding:0 10px;}
+section .cont > div .board_view .view_nav dt.next {border-left:none; border-right:1px solid #c8c8c8; float:left; border-top:none;}
+section .cont > div .board_view .view_nav dd.next {width:calc(100% - 80px); float:left; border-top:none;}
+section .cont > div .board_view .view_nav dd a {font-size:13px;}
+/*
+section .cont > div .board_view .btn_area a,
+section .cont > div .board_view .btn_area button {font-size:12px; height:32px; line-height:32px; padding:0; width:100%; float:right;}
+section .cont > div .board_view .btn_area.btn3 > div {float:none;}
+section .cont > div .board_view .btn_area.btn3 > div a,
+section .cont > div .board_view .btn_area.btn3 > div button {font-size:12px; height:32px; line-height:32px; padding:0; width:calc(33.33% - 4px); float:right; margin-left:6px; min-width:0;}
+section .cont > div .board_view .btn_area.btn3 > div a {background:#596168; float:left; margin-left:0;}
+section .cont > div .board_view .btn_area.btn3 > div a:nth-child(2) {margin-left:6px;}*/
+
+/* 게시판 교육후기 VIEW */
+section .cont > div .board_view.review .view_header {padding-bottom:0;}
+section .cont > div .board_view.review .view_header dt.date {border-right:none;}
+section .cont > div .board_view.review .view_header dt.date + dd {border-right:none;}
+section .cont > div .board_view.review .view_header > dl {position:relative;}
+section .cont > div .board_view.review .view_header > dl dd {padding-left:10px; max-width:80px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+section .cont > div .board_view.review .view_header > dl dt {display:none;}
+section .cont > div .board_view.review .view_header > dl dt.point {display:block; padding-left:0; font-size:13px; height:32px; line-height:32px; border-top:1px solid #e7e7e7; margin-top:20px;}
+section .cont > div .board_view.review .view_header > dl dt.point + dd {position:absolute; left:15px; top:43px; }
+section .cont > div .board_view.review .view_header > dl dt.point + dd img {width:62px; height:10px;}
+
+/* 견적문의, QNA작성, 교육후기작성, 회원가입 및 정보수정 */
+section .cont > div .custom_write h3 {font-size:18px; line-height:18px; margin-bottom:30px;}
+section .cont > div .custom_write h3 span {font-size:18px; line-height:18px; padding-right:4px;}
+section .cont > div .custom_write dl {border-top:none;}
+section .cont > div .custom_write dl dt,
+section .cont > div .custom_write dl dd {display:block; border:none;; float:none; background:none; width:100%; padding:0; min-height:0 !important; line-height:0 !important;}
+section .cont > div .custom_write dl dt {margin-bottom:12px;}
+section .cont > div .custom_write dl dt label {margin-bottom:14px;}
+section .cont > div .custom_write dl dt label + .must {margin-left:5px;}
+section .cont > div .custom_write dl dd input[type="text"],
+section .cont > div .custom_write dl dd input[type="password"] {width:calc(100% - 22px); font-size:13px; font-weight:300; color:#666;}
+section .cont > div .custom_write dl dd input.short {width:75px; clear:both;}
+section .cont > div .custom_write dl dd input.gold {color:#b58913;}
+section .cont > div .custom_write dl dd p {font-size:13px; margin-top:3px;}
+section .cont > div .custom_write dl dd.id input[type="text"],
+section .cont > div .custom_write dl dd.id input[type="password"] {width:calc(50% - 36px);}
+section .cont > div .custom_write dl dd input[type="text"] + em {font-size:13px;}
+section .cont > div .custom_write dl dd.tel input[type="text"] {width:calc(100% - 91px);}
+section .cont > div .custom_write dl dd.id select {width:calc(50% - 45px);}
+section .cont > div .custom_write dl dd.id select + a {margin-top:5px;}
+section .cont > div .custom_write dl dd.public {margin-top:-10px;}
+section .cont > div .custom_write dl dd.public span {margin-top:2px; margin-bottom:5px;}
+section .cont > div .custom_write dl dd.public span label {font-size:13px;}
+section .cont > div .custom_write dl dd.gender a {width:calc(50% - 2px); margin-top:0;}
+section .cont > div .custom_write dl dd.password .default {display:none !important;}
+section .cont > div .custom_write dl dd.password span, 
+section .cont > div .custom_write dl dd.password .pass,
+section .cont > div .custom_write dl dd.password .fail,
+section .cont > div .custom_write dl dd.confirm span, 
+section .cont > div .custom_write dl dd.confirm .pass,
+section .cont > div .custom_write dl dd.confirm .fail {margin-left:0; margin-top:5px; background-size:10px 12px;}
+section .cont > div .custom_write dl dd select {width:calc(100% - 67px) !important; font-size:13px; font-weight:300; color:#666; margin-left:0}
+section .cont > div .custom_write dl dd.point select {width:100% !important;}
+section .cont > div .custom_write dl dd input + a,
+section .cont > div .custom_write dl dd select + a {width:56px; height:28px; line-height:28px; margin-left:5px; font-size:12px; top:2px;}
+section .cont > div .custom_write dl dd.text {padding:0;}
+section .cont > div .custom_write dl dd {padding-bottom:25px;}
+section .cont > div .custom_write dl dd textarea {width:calc(100% - 22px); font-size:13px; font-weight:300; color:#666;}
+section .cont > div .custom_write .common {font-size:13px;padding-left:7px; line-height:23px; background:url(../img/bl/bl_dot.png) no-repeat 0 12px;}
+section .cont > div .custom_write dl + .more {margin-top:35px; margin-bottom:30px;}
+
+/* 제품 LIST */
+section .cont > div .prod ul {overflow:hidden;}
+section .cont > div .prod ul li {margin-left:20px; width:calc(50% - 10px);}
+section .cont > div .prod ul li:nth-child(odd) {margin-left:0;}
+section .cont > div .prod ul li a {width:100%; height:auto;}
+section .cont > div .prod ul li a div img {width:calc(100% - 2px); height:auto;}
+section .cont > div .prod ul li p,
+section .cont > div .prod ul li strong {text-align:center; font-size:13px;}
+section .cont > div .prod ul li p {padding:0; padding-top:15px; margin-bottom:0; height:30px;}
+section .cont > div .prod ul li strong {padding:0; margin:15px 0 18px 0; height:30px;}
+section .cont > div .prod > a span {font-size:13px; padding-right:17px;}
+
+/* 제품 VIEW */
+section .cont > div .prod_view {padding:20px 0;}
+section .cont > div .prod_view h3,
+section .cont > div .prod_view .img_box,
+section .cont > div .prod_view dl {float:none; width:100%;}
+section .cont > div .prod_view h3 {border-left:none; padding-left:0; font-size:18px; line-height:24px; height:auto; margin-bottom:20px;}
+section .cont > div .prod_view .img_box {margin-bottom:0;}
+section .cont > div .prod_view .img_box .view {width:calc(100% - 2px); height:auto;}
+section .cont > div .prod_view .img_box .img_list {padding:14px 0; width:calc(100% - 2px);}
+section .cont > div .prod_view .img_box .img_list .img_view {width:232px; height:55px; margin:0 auto; overflow:hidden;}
+section .cont > div .prod_view .img_box .img_list ul {overflow:hidden;}
+section .cont > div .prod_view .img_box .img_list ul li {margin-left:4px;}
+section .cont > div .prod_view .img_box .img_list ul li a img {width:53px; height:53px;}
+section .cont > div .prod_view .img_box .img_list > a {top:27px; width:15px; height:30px; background-size:4px 8px;}
+section .cont > div .prod_view .img_box .img_lower {float:none; overflow:hidden; padding-bottom:30px; border-bottom:1px solid #e7e7e7;}
+section .cont > div .prod_view .img_box .img_lower > a {float:right;}
+section .cont > div .prod_view dl {padding:0; border-left:none; padding-bottom:30px; border-bottom:1px solid #e7e7e7; margin-bottom:0;}
+section .cont > div .prod_view dl dt {font-size:15px; margin:30px 0 16px 0;}
+section .cont > div .prod_view dl dt:first-child {margin-top:30px;}
+
+section .cont > div .prod_view dl dd div p {font-size:13px;}
+section .cont > div .prod_view .rela {border-top:none; padding-top:50px;}
+section .cont > div .prod_view .rela > p {font-size:17px; padding-bottom:8px; background:url(../img/bl/bl_border_h4mobile.png) no-repeat left bottom;}
+section .cont > div .prod_view .rela .rela_prod ul li {margin-left:20px; width:calc(50% - 10px);}
+section .cont > div .prod_view .rela .rela_prod ul li:nth-child(odd) {margin-left:0;}
+section .cont > div .prod_view .rela .rela_prod ul li:nth-child(even) {padding-top:20px;}
+section .cont > div .prod_view .rela .rela_prod ul li a {width:100%; height:auto;}
+section .cont > div .prod_view .rela .rela_prod ul li a div {display:block; width:auto; height:auto;}
+section .cont > div .prod_view .rela .rela_prod ul li a div img {width:100%; height:auto;}
+section .cont > div .prod_view .rela .rela_prod ul li a p {padding:15px 0 18px 0;}
+section .cont > div .prod_view .rela .rela_prod ul li a p span {font-size:13px; height:30px;}
+
+/* 프로모션 이벤트 목록 LIST */
+section .event_list ul li,
+section .event_list ul li img {width:100%; height:auto;}
+section .event_list ul li:first-child + li,
+section .event_list ul li {margin:0 !important; padding-top:40px;}
+section .event_list ul li a {width:calc(100% - 2px); height:auto;}
+section .event_list ul li ul {font-size:11px; line-height:12px;}
+section .event_list ul li dl,
+section .event_list ul li dt, 
+section .event_list ul li dd {font-size:11px; color:#666; line-height:12px; display:inline-block;}
+section .event_list ul li dt.mail {padding-left:11px}
+section .event_list ul li dl dd {border-right:1px #c8c8c8 solid; padding-right:11px;}
+section .event_list ul li dl dd:last-child {border-right:0 none}
+section .event_list ul li dd {padding-left:3px;}
+section .event_list ul li a {background-size:116px 31px;}
+section .event_list ul li > div.cont {padding:12px 10px 36px;}
+section .event_list ul li > div.cont h3.title {font-size:13px !important; padding:0 !important; line-height:18px; padding-bottom:11px !important;}
+section .event_list ul li > div.event_img {position:relative; width:100%;}
+section .event_list ul li div.event_img > div.ending {display:block !important; position:absolute; top:0; left:0;}
+section .event_list ul li div.event_img > div.ending p {font-size:13px; padding:0; text-align:center; position:absolute; margin:0; width:174px; height:34px; line-height:34px; display:inline-block; top:calc(50% - 18px); left:calc(50% - 88px);}
+
+/* 신상품 */
+section .cont > div .new_list ul li {height:auto; padding:30px 0; overflow:hidden;}
+section .cont > div .new_list ul li > div.new_img,
+section .cont > div .new_list ul li > div.new_cont {text-align:center; width:100%; margin:0; padding:0;}
+section .cont > div .new_list ul li > div.new_img {padding-bottom:28px;}
+section .cont > div .new_list ul li > div.new_img img {width:100%;}
+section .cont > div .new_list ul li > div.new_cont h3 {font-size:18px; line-height:20px;}
+section .cont > div .new_list ul li > div.new_cont p {font-size:13px; line-height:18px; max-height:54px; overflow:hidden; padding:0; margin:10px 0 40px;}
+section .cont > div .new_list ul li > div.new_cont div.btn_detail a {height:40px; line-height:40px; padding:0 29px; font-size:12px;}
+section .cont > div .new_list > a span {font-size:13px; padding-right:17px;}
+
+/* 로그인 */
+section .cont > div .login .login_box {border:none; padding:0;}
+section .cont > div .login .login_box .left {width:100%;}
+section .cont > div .login .login_box .right {width:100%;}
+section .cont > div .login .login_box > div {float:none;}
+section .cont > div .login .login_box .left label {height:15px; line-height:15px; width:auto; margin-bottom:10px;}
+section .cont > div .login .login_box .left input {width:calc(100% - 22px); font-size:13px; font-weight:300; color:#666; margin-bottom:25px;}
+section .cont > div .login .login_box .left label:nth-child(3) {margin-bottom:12px;}
+section .cont > div .login .login_box .left input:nth-child(4) {margin-bottom:25px;}
+section .cont > div .login .login_box .right button {width:100%; height:43px; line-height:43px; text-align:center; font-size:12px; font-weight:500; margin-top:5px;}
+section .cont > div .login .login_menu {margin-top:40px;}
+section .cont > div .login .login_menu li {margin-top:0; width:calc(33.33%); height:33px; margin-left:0; border:none; background:none !important; position:static;}
+section .cont > div .login .login_menu li:first-child {margin-top:0; margin-left:0;}
+section .cont > div .login .login_menu li:nth-child(1) {border-right:3px solid #fff; box-sizing:border-box;}
+section .cont > div .login .login_menu li:nth-child(2) {border-left:2px solid #fff; border-right:2px solid #fff; box-sizing:border-box;}
+section .cont > div .login .login_menu li:nth-child(3) {border-left:3px solid #fff; box-sizing:border-box;}
+section .cont > div .login .login_menu li p {display:none;}
+section .cont > div .login .login_menu li a {position:static; font-size:12px; width:100%; height:33px; line-height:33px;}
+section .cont > div .login .login_menu li a.grey {background:#596168;}
+
+/* 회원가입 */
+section .cont > div .join_mobile {margin-bottom:40px; position:relative; height:53px; overflow:hidden; background:url(../img/bg/bg_line_step.png) repeat-x; background-size:1px 53px;}
+section .cont > div .join_mobile li {display:table; float:left; position:absolute; width:32%; height:53px; top:0; text-align:center; border:1px solid #c9c9c9; background:#e7e7e7; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; border-radius:26px;}
+section .cont > div .join_mobile li span {font-size:10px; font-weight:500; color:#666; display:table-cell; vertical-align:middle;}
+section .cont > div .join_mobile li.on {background:#fff; border:3px solid #b58913;}
+section .cont > div .join_mobile li.on span {color:#936d07;}
+section .cont > div .join_mobile li:nth-child(1) {left:0;}
+section .cont > div .join_mobile li:nth-child(2) {left:34%;}
+section .cont > div .join_mobile li:nth-child(3) {right:0;}
+section .cont > div .edu.comp.join_comp .complete {background-position:center 30px; background-size:65px 70px;}
+
+/* 스타일리스트 검색 */
+section .cont > div .style h3 + ul li {font-size:13px; line-height:22px; margin-top:0; padding-left:13px; background:url(../img/bl/bl_dot.png) no-repeat 3px 10px;}
+section .cont > div .style .search_box {background:none; border:none; padding:0; margin-top:0;}
+section .cont > div .style .search_box input,
+section .cont > div .style .search_box select {margin-right:0;}
+section .cont > div .style .search_box input {width:calc(100% - 22px); font-size:13px; color:#666;}
+section .cont > div .style .search_box select {width:100%; font-size:13px; color:#666;}
+section .cont > div .style .search_box .left,
+section .cont > div .style .search_box .right {width:100%; float:none;}
+section .cont > div .style .search_box .left label {display:block !important; width:auto !important; margin-bottom:5px !important; margin-top:20px;}
+section .cont > div .style .search_box .right {margin-top:30px;}
+section .cont > div .style .search_box .right button {width:100%; height:43px; line-height:43px; font-size:12px;}
+section .cont > div .style .search_box .left *:nth-child(1),
+section .cont > div .style .search_box .left *:nth-child(2),
+section .cont > div .style .search_box .left *:nth-child(3),
+section .cont > div .style .search_box .left *:nth-child(4) {margin-bottom:0;}
+section .cont > div .style .style_list {margin-top:40px; border-top:2px solid #666;}
+section .cont > div .style .style_list li {padding:30px 0;}
+section .cont > div .style .style_list li .image,
+section .cont > div .style .style_list li .no_image {float:none; border:1px solid #c8c8c8; width:calc(100% - 2px); height:auto;}
+section .cont > div .style .style_list li .no_image {background-size:73px 76px;}
+section .cont > div .style .style_list li .image img,
+section .cont > div .style .style_list li .no_image img {width:100%; height:auto;}
+section .cont > div .style .style_list li .data {float:none; margin-left:0; padding-top:20px;}
+section .cont > div .style .style_list li .data img {float:left; width:27px; height:18px;}
+section .cont > div .style .style_list li .data span {font-size:18px; line-height:18px; height:18px; margin-left:5px;}
+section .cont > div .style .style_list li table {margin-top:10px;}
+section .cont > div .style .style_list li table tr th,
+section .cont > div .style .style_list li table tr td {font-size:13px; line-height:23px; font-weight:300;}
+section .cont > div .style .style_list li table tr th {width:90px; font-weight:500;}
+section .cont > div .style .style_list li table tr td {width:auto;}
+section .cont > div .style > a {margin-top:20px; display:block; height:38px; line-height:38px; border:1px solid #596168; text-align:center;}
+section .cont > div .style > a span {font-size:14px; color:#596168; font-weight:300; padding-right:24px; background:url(../img/bl/bl_list_more.png) no-repeat right center;}
+
+/* 이용약관, 개인정보취급방침 */
+section .cont > div .term h3 {font-size:15px; font-weight:500; color:#333; line-height:15px; margin-bottom:15px; margin-top:35px; padding-left:14px; background:url(../img/bl/bl_h3_term.png) no-repeat 0 3px; background-size:9px 9px;}
+section .cont > div .term span {font-size:13px; height:auto; line-height:43px; margin-top:0;}
+section .cont > div .term p,
+section .cont > div .term li {font-size:13px; line-height:23px;}
+section .cont > div .term ol > li {padding-left:10px; text-indent:-10px;}
+section .cont > div .term .type02 > li {padding-left:13px; text-indent:-13px;}
+section .cont > div .term ol li ol {padding-left:0;}
+section .cont > div .term ol li ol li {padding-left:10px; text-indent:-10px;}
+section .cont > div .term ul li {background-position:0 12px;}
+
+/* 제품 가이드 */
+section .cont > div .guide_list {overflow:hidden; padding-top:20px;}
+section .cont > div .guide_list li {float:none; width:100%; margin-left:0; margin-bottom:50px;}
+section .cont > div .guide_list li p {width:100%; white-space:normal; overflow:visible; text-overflow:clip; font-size:13px; line-height:26px; margin:10px 0;}
+section .cont > div .guide_list .guide_box > img {width:calc(100% - 2px); height:auto;}
+
+/* 스타일리스트 소개글 */
+section .cont > div .style_intro p,
+section .cont > div .style_intro li {font-size:13px; line-height:23px;}
+section .cont > div .style_intro h3 + p {margin-top:-5px;}
+section .cont > div .style_intro h4 {font-size:15px; font-weight:500; color:#333; line-height:15px; margin-bottom:15px; margin-top:35px; padding-left:14px; background:url(../img/bl/bl_h3_term.png) no-repeat 0 3px; background-size:9px 9px;}
+section .cont > div .style_intro li {line-height:23px; padding-left:14px; background:url(../img/bl/bl_dot.png) no-repeat 3px 12px; background-size:1px 1px;}
+
+/* 아카데미 수석인증 강사 리스트  */
+section .cont > div .senior_list li {width:calc(50% - 10px); margin-left:20px;}
+section .cont > div .senior_list li:nth-child(odd) {margin-left:0;}
+section .cont > div .senior_list li .nation {width:15px; height:10px; margin-top:7px;}
+section .cont > div .senior_list li .rank {width:15px; height:15px; margin:7px 0 0 5px;}
+section .cont > div .senior_list li .personal {width:100%; height:auto;}
+section .cont > div .senior_list li div p {font-size:13px; line-height:21px; margin-bottom:5px;}
+
+/* 회원가입 약관동의 */
+section .cont > div .term_box .agree {padding:12px 0 12px 15px; width:calc(100% - 15px);}
+section .cont > div .term_box .agree a {width:18px; height:18px; margin-right:8px; background-size:18px 18px;}
+section .cont > div .term_box .agree a.on {background-size:18px 18px;}
+section .cont > div .term_box .agree span {font-size:12px; line-height:18px;}
+section .cont > div .term_box .term {padding:15px; height:145px; margin-top:50px;}
+section .cont > div .term_box .term h3 {font-size:13px;}
+section .cont > div .term_box .term p,
+section .cont > div .term_box .term li,
+section .cont > div .term_box .term span {font-size:13px; line-height:23px;}
+section .cont > div .term_box .term .type01 > li {padding-left:10px; text-indent:-10px;}
+section .cont > div .term_box .term .type02 > li {padding-left:15px; text-indent:-15px;}
+section .cont > div .term_box .term ul li {background-position:0 13px;}
+
+/* 교육과정 */
+section .cont > div .tab_menu + p {font-size:13px; line-height:23px; word-break:keep-all;}
+section .cont > div .edu_list {margin-top:20px;}
+section .cont > div .edu_list li {padding-bottom:25px; background-position:center 30px; background-size:70px 70px;}
+section .cont > div .edu_list li .intro {width:100%; padding:0; padding-top:110px;}
+section .cont > div .edu_list li .intro span {font-size:18px; line-height:46px; display:block; text-align:center;}
+section .cont > div .edu_list li .intro p {font-size:13px; line-height:23px; word-break:keep-all;}
+section .cont > div .edu_list li .intro p br {display:none;}
+section .cont > div .edu_list li .info {width:100%; display:block; overflow:hidden; margin-top:25px;}
+section .cont > div .edu_list li .info dt,
+section .cont > div .edu_list li .info dd {font-size:13px; line-height:23px; float:left;}
+section .cont > div .edu_list li .info dt {width:65px;}
+section .cont > div .edu_list li .info dd {width:calc(100% - 65px); margin-left:0;}
+section .cont > div .edu_list.edu3 li .intro {width:100%; padding:0; padding-top:110px;}
+section .cont > div .edu_list.edu3 li .intro p br {display:block;}
+
+/* 마이페이지 교육신청정보 */
+section .cont > div .board.myedu ul li dl dt:nth-child(odd) {width:60px; font-size:13px; font-weight:500; line-height:23px;}
+section .cont > div .board.myedu ul li dl dd:nth-child(2) {margin-bottom:0; float:right;}
+section .cont > div .board.myedu ul li dl dd:nth-child(2) input {position:absolute; right:20px; top:calc(50% - 8px);}
+section .cont > div .board.myedu ul li dl dt:nth-child(3) {display:none;}
+section .cont > div .board.myedu ul li dl dd:nth-child(4) {width:100%; overflow:visible; text-overflow:clip; white-space:normal; margin-bottom:10px;}
+section .cont > div .board.myedu ul li dl dd:nth-child(4) label {font-size:15px; font-weight:500; color:#333; line-height:20px; height:auto;}
+section .cont > div .board.myedu ul li dl dt:nth-child(9) {display:inline-block;}
+
+/* 사이트맵 */
+section .cont > div .sitemap > li {padding:30px 0;}
+section .cont > div .sitemap > li span {float:none; display:block; width:100%; border-right:none;}
+section .cont > div .sitemap > li > ul {padding-left:0;}
+section .cont > div .sitemap > li > ul > li {display:block; float:none; width:100%; margin-top:15px;}
+section .cont > div .sitemap > li > ul > li:first-child {margin-top:20px;}
+section .cont > div .sitemap > li > ul > li > a {font-size:13px;}
+section .cont > div .sitemap > li > ul > li > ul {margin-top:0;}
+section .cont > div .sitemap > li > ul > li > ul > li {margin-bottom:0; margin-top:15px;}
+section .cont > div .sitemap > li > ul > li > ul > li:last-child {margin-bottom:0;}
+section .cont > div .sitemap > li > ul > li > ul > li > a {font-size:13px; margin-left:15px;}
+
+/* ABOUT BRAND */
+section .cont > div .brand > p {font-size:13px; line-height:23px;}
+section .cont > div .brand h3 {font-size:15px; font-weight:500; color:#333; line-height:15px; margin-bottom:20px; margin-top:35px; padding-left:14px; background:url(../img/bl/bl_h3_term.png) no-repeat 0 3px; background-size:9px 9px;}
+section .cont > div .brand .main_tit {font-size:30px; line-height:36px; margin:0;}
+section .cont > div .brand .main_tit span {font-size:30px; line-height:36px;}
+section .cont > div .brand .main_text {font-size:13px; line-height:13px; margin-top:27px; margin-bottom:30px;}
+section .cont > div .brand .sub_tit {font-size:15px; line-height:15px; margin-bottom:15px;}
+section .cont > div .brand .sub_text {font-size:13px; line-height:23px;}
+section .cont > div .brand .con_box {background-size:5px 5px;}
+section .cont > div .brand .con_box img {width:160px; height:78px; padding:41px 0;}
+section .cont > div .brand .concept {margin:0; margin-bottom:30px;}
+section .cont > div .brand .concept li {display:block; width:100% !important; border-right:none; float:none; padding-top:30px; min-height:0; padding-top:100px; margin-top:10px;}
+section .cont > div .brand .concept li p {font-size:13px; line-height:23px;}
+section .cont > div .brand .concept li .con_tit {font-size:18px; line-height:18px; margin-bottom:12px;}
+section .cont > div .brand .concept li .con_tit span {font-size:18px; line-height:18px;}
+section .cont > div .brand .color {overflow:hidden; margin-bottom:15px;}
+section .cont > div .brand .color li {display:block; width:auto; padding:25px; float:none;}
+section .cont > div .brand .color li:last-child {margin-left:0; margin-top:10px;}
+section .cont > div .brand .color li strong {width:75px; height:75px; margin-right:30px;}
+section .cont > div .brand .color li p {font-size:13px; line-height:13px; margin-top:0; margin-bottom:15px;}
+section .cont > div .brand .color li span {display:block; font-size:13px; line-height:8px; margin-right:0; margin-bottom:10px;}
+section .cont > div .brand .color li span:last-child {margin-bottom:0;}
+section .cont > div .brand .sig li {overflow:hidden; margin-bottom:15px;}
+section .cont > div .brand .sig li:last-child {margin-bottom:0;}
+section .cont > div .brand .sig li div {display:block; float:none; width:auto; height:auto; margin-right:0;}
+section .cont > div .brand .sig li div img {padding:27px 0; height:34px;}
+section .cont > div .brand .sig li:nth-child(1) div img {width:135px;}
+section .cont > div .brand .sig li:nth-child(2) div img {width:157px;}
+section .cont > div .brand .sig li:nth-child(3) div img {width:125px;}
+section .cont > div .brand .sig li p {font-size:13px; line-height:23px; padding:10px 0;}
+
+/* 교육장소 */
+.edu_place > div.office_add{margin-bottom:24px; }
+.edu_place > .office_add > h3{font-size:16px !important; margin-bottom:16px !important; line-height:22px}
+.edu_place ul {min-height:68px; height:auto; padding:12px 0 44px; border-bottom:1px #e7e7e7 solid;}
+.edu_place ul li{font-size:13px; background:url(../img/bl/bl_dot03.gif) no-repeat 4px 12px; padding-left:14px; line-height:22px;}
+
+/* 교육소개 - BL Lashes 강사진*/
+.teacher > h3{font-size:20px !important; line-height:19px}
+.teacher > h3 span{font-size:17px; padding-left:10px; line-height:19px}
+.teacher div h4{font-size:15px; padding-left:14px; margin: 40px 0 10px;}
+.tea_detail div:first-child h4:first-child{margin-top:35px}
+.teacher div > dl dt, .teacher div > dl dd{font-size:13px}
+.teacher div > dl{padding-top:5px;}
+.teacher div > dl dt{float:none; background:url(../img/bl/bl_dot03.gif) no-repeat 4px center; padding-left:14px; line-height:20px}
+.teacher div > dl dd{padding-left:14px; font-weight:300; line-height:23px; }
+.teacher div > dl dd:first-child{padding-top:6px}
+.tea_detail .history ul li{background:url(../img/bl/bl_dot03.gif) no-repeat 4px 11px; line-height:23px;}
+.tea_detail .history ul li,
+.tea_detail .history ul li:first-child{margin-top:3px}
+.tea_detail div > ul {margin-top:5px;}
+.tea_detail .history ul li,
+.tea_detail .qual ul li{font-size:13px !important; padding-left:14px;}
+.teacher .qual > ul li{line-height:27px; background:url(../img/bl/bl_dot03.gif) no-repeat 4px 13px;}
+.teacher > img{float:none; width:100%;}
+.teacher .tea_detail {float:none; width:100%; border-left:0 none; padding-left:0; margin-top:0}
+.tea_detail .qual{margin-top:0}
+
+.teacher .leture_img{float:none; margin-top:0; position:relative; width:100%}
+.teacher .leture_img ul li img{width:100%;}
+.teacher .bx-pager{display:none}
+
+.leture_img .bx-controls-direction a:first-child{position:absolute; top:48%; left:0; background:url(../img/bl/bl_btn_img_left.gif) no-repeat left 0;}
+.leture_img .bx-controls-direction a{text-indent:-9999em; width:30px; height:40px}
+.leture_img .bx-controls-direction a:last-child{position:absolute; top:48%; right:0; background:url(../img/bl/bl_btn_img_right.gif) no-repeat right 0;}
+
+/* 주요커리큘럼 */
+.mainCurr .curr_cont{border:1px #c8c8c8 solid; margin-top:10px; padding:32px 14px 32px 30px; }
+.curr_cont ul li{padding:8px 9px; color:#666; line-height:19px; float:none; width:auto; font-size:15px; background:url(../img/bl/bl_dot03.gif) no-repeat 0 17px;word-break:keep-all;}
+
+/* 교육후기 수정 비밀번호 확인 */
+section .cont > div .modify_con {padding:20px 0;}
+section .cont > div .modify_con label {font-size:13px; line-height:22px; margin-bottom:15px;}
+section .cont > div .modify_con input {width:calc(100% - 22px); font-size:13px; color:#666;}
+
+/* 스타일가이드 */
+.style_guide > div.list_guide{margin-top:30px}
+.style_guide .beforeAfter div.bx-controls{display:none}
+div.list_guide > div.product_guide{padding:30px 0 25px; position:relative; overflow:hidden}
+div.list_guide > div.product_guide{text-align:center}
+div.list_guide > div.product_guide img{float:none; width:100%; height:auto; max-width:130px; }
+div.product_guide > div.guide_cont{width:100%; padding-left:0; text-align:left}
+div.product_guide > div.guide_cont > span{padding-top:15px; font-size:18px; line-height:28px; font-weight:500}
+div.product_guide > div.guide_cont > p{padding:10px 0 5px; line-height:23px; font-size:13px}
+div.product_guide> div.guide_cont > ul{margin-left:13px;}
+div.product_guide > div.guide_cont > ul li{line-height:23px; font-size:13px; padding-left:0}
+
+/* 연혁 */
+section .cont > div .history select {width:100%; font-size:13px; font-weight:300; color:#666; height:30px; line-height:30px; border:1px solid #c8c8c8; padding:0 10px; margin-bottom:29px;}
+section .cont > div .history .his_data {overflow:hidden;}
+section .cont > div .history .his_data h3 {font-size:20px; width:auto; float:none;}
+section .cont > div .history .his_data h3 span {font-size:30px;}
+section .cont > div .history .his_data strong {display:block; float:none; font-size:13px; padding-left:30px;;}
+section .cont > div .history .his_data dl {width:auto; float:none; overflow:hidden;}
+section .cont > div .history .his_data dl dt {width:30px; float:left; font-size:15px;}
+section .cont > div .history .his_data dl dd {width:calc(100% - 30px); font-size:13px; line-height:17px; margin-bottom:17px; margin-top:-2px;}
+section .cont > div .history .his_data .img {width:100%; float:none;}
+section .cont > div .history .his_data .img img {width:calc(100% - 2px);}
+
+}

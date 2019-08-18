@@ -1,0 +1,707 @@
+﻿@charset "utf-8";
+
+/* 컨텐츠 영역 */
+section {padding-left:220px;}
+section > .tit {height:149px; border-bottom:1px solid #e7e7e7; background:#f9f8f5; border-left:1px solid #e7e7e7;}
+section > .tit > div {width:1000px; height:70px; margin:0 auto; padding:40px 0;}
+section > .tit > div h2 {font-size:40px; font-weight:700; color:#936d07;}
+section > .tit > div p {padding-top:15px; font-size:18px; font-weight:300; color:#666;}
+section > .cont {border-left:1px solid #e7e7e7; min-height:930px;}
+section > .cont > div {width:1000px; margin:0 auto; padding:80px 0; position:relative; overflow:hidden;} /* 컨텐츠 레이아웃 */
+
+section > .cont .loca {position:absolute; overflow:hidden; right:0; top:15px;} /* 로케이션, PC에서만 보임 */
+section > .cont .loca li {float:left; display:inline-block; font-size:14px; font-weight:300; color:#909090; padding-left:35px;background:url(../img/ico/ico_next_loca.png) no-repeat 15px 3px;}
+section > .cont .loca li:first-child {text-indent:-9999px; background:url(../img/ico/ico_home_loca.png) no-repeat; padding-left:0; width:16px;}
+section > .cont .loca li:last-child {color:#ac8724; font-weight:500;}
+
+/*
+/////////////////
+// 내부 컨텐츠 //
+/////////////////
+*/
+
+/* 하단 3단 버튼 */
+section .cont > div .btn_area {overflow:hidden; margin-top:45px;}
+section .cont > div .btn_area div {display:inline-block; float:right;}
+section .cont > div .btn_area div a,
+section .cont > div .btn_area div button {display:inline-block; font-size:15px; color:#fff; font-weight:500; text-align:center; background:#b58913; height:46px; line-height:46px; float:right; min-width:80px; padding:0 20px; margin-left:8px; float:left;}
+section .cont > div .btn_area div button {min-width:120px;}
+section .cont > div .btn_area div .grey {background:#596168;}
+
+/* 탭메뉴 */
+section .cont > div .tab_menu {overflow:hidden; margin-bottom:40px;}
+section .cont > div .tab_menu li {float:left; margin-right:8px;}
+section .cont > div .tab_menu li:last-child {margin-right:0 !important;}
+section .cont > div .tab_menu li a {height:36px; display:inline-block; width:100%; text-align:center; font-size:18px; color:#666; font-weight:300; border-bottom:2px solid #c8c8c8;}
+section .cont > div .tab_menu li a:hover,
+section .cont > div .tab_menu li a:focus,
+section .cont > div .tab_menu li.on a {height:33px; font-size:18px; color:#b58913; font-weight:500; border-bottom:5px solid #b58913;}
+section .cont > div .tab_menu.menu2 li {width:496px;}
+section .cont > div .tab_menu.menu3 li {width:328px;}
+section .cont > div .tab_menu.menu4 li {width:244px;}
+section .cont > div .tab_menu.menu5 li {width:192px; margin-right:10px;}
+section .cont > div .tab_menu.menu6 li {width:160px;}
+
+/* 작은 탭메뉴 */
+section .cont > div .tab_menu.small {margin-bottom:60px;}
+section .cont > div .tab_menu.small li a {height:29px; font-size:15px; border-bottom:1px solid #c8c8c8;}
+section .cont > div .tab_menu.small li a:hover,
+section .cont > div .tab_menu.small li a:focus,
+section .cont > div .tab_menu.small li.on a {height:28px; font-size:15px; color:#b58913; font-weight:300; border-bottom:2px solid #b58913;}
+
+/* 제목, 리스트 기본 가이드 */
+section .cont > div > div h3 {font-size:24px; color:#333; font-weight:700; padding-bottom:20px;}
+section .cont > div > div h3 + p {margin-top:-10px; font-size:15px; color:#666; font-weight:300; margin-bottom:30px;}
+
+/* 게시판 기본형(공지사항) LIST */
+section .cont > div .board {}
+section .cont > div .board .pc {background:#f6f5f4; border-top:2px solid #333; padding:17px 0; width:100%; overflow:hidden;}
+section .cont > div .board .pc span {display:inline-block; font-size:15px; color:#333; height:15px; line-height:15px; border-right:1px solid #c8c8c8; text-align:center; font-weight:500; float:left;}
+section .cont > div .board .pc span:last-child {border-right:none;}
+section .cont > div .board .pc > .text_num {width:129px;}
+section .cont > div .board .pc > .text_title {width:569px;}
+section .cont > div .board .pc > .text_view {width:149px;}
+section .cont > div .board .pc > .text_date {width:150px;}
+section .cont > div .board ul {border-top:1px solid #c8c8c8; border-bottom:1px solid #c8c8c8;}
+section .cont > div .board ul li {text-align:center; border-bottom:1px solid #e7e7e7; padding:17px 0; overflow:hidden;}
+section .cont > div .board ul li:last-child {border-bottom:none;}
+section .cont > div .board ul li span {display:inline-block; font-size:15px; color:#333; font-weight:300; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; position:relative; float:left;}
+section .cont > div .board ul li span a {font-size:15px; color:#333;}
+section .cont > div .board ul li span a:hover, 
+section .cont > div .board ul li span a:focus, 
+section .cont > div .board ul li span a:active {color:#b58913;}
+section .cont > div .board ul li .text_num {width:130px;}
+section .cont > div .board ul li .text_title {width:530px; padding:0 20px; text-align:left;}
+section .cont > div .board ul li .text_view {width:150px;}
+section .cont > div .board ul li .text_date {width:150px;}
+section .cont > div .board ul li.no_text {font-size:15px; color:#333;}
+
+/* 게시판 QNA LIST */
+section .cont > div .board.qna ul li .text_view {font-weight:500; color:#909090;}
+section .cont > div .board.qna ul li .text_view.reply {color:#00b76c;}
+
+/* 게시판 교육후기 LIST */
+section .cont > div .board.review ul li {padding:16px 0 15px 0;}
+section .cont > div .board.review ul li .text_sec {display:inline-block; width:16px; height:18px; text-indent:-9999px; background:url(../img/ico/ico_unsec_qna.png) no-repeat right 0; padding-left:20px;}
+section .cont > div .board.review ul li .text_sec.secret {background:url(../img/ico/ico_sec_qna.png) no-repeat right 0;}
+section .cont > div .board.review ul li .text_title {width:494px; padding:0 20px; text-align:left;}
+section .cont > div .board.review ul li .text_view img {margin-top:-5px;}
+section .cont > div .board.review ul li.no_text {padding:17px 0;}
+
+/* 게시판 교육신청 LIST */
+section .cont > div .board.edu .pc > .subject {width:219px;}
+section .cont > div .board.edu .pc > .term {width:259px;}
+section .cont > div .board.edu .pc > .time {width:179px;}
+section .cont > div .board.edu .pc > .price {width:159px;}
+section .cont > div .board.edu .pc > .request {width:179px;}
+section .cont > div .board.edu ul li {padding:9px 0;}
+section .cont > div .board.edu ul li dl {overflow:hidden;}
+section .cont > div .board.edu ul li dl dt {display:none;}
+section .cont > div .board.edu ul li dl dd {display:inline-block; float:left; font-size:15px; color:#666; font-weight:300; height:30px; line-height:29px;}
+section .cont > div .board.edu ul li dl dd:nth-child(2) {width:220px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;} /* 교육과정 */
+section .cont > div .board.edu ul li dl dd:nth-child(4) {width:260px;} /* 교육기간 */
+section .cont > div .board.edu ul li dl dd:nth-child(6) {width:180px;} /* 교육시간 */
+section .cont > div .board.edu ul li dl dd:nth-child(8) {width:160px;} /* 수강료 */
+section .cont > div .board.edu ul li dl dd:nth-child(10) {width:180px;} /* 수강신청 */
+section .cont > div .board.edu ul li dl dd a {display:inline-block; width:70px; height:28px; line-height:28px; font-size:14px; color:#596168; border:1px solid #596168; text-align:center; font-weight:500;}
+section .cont > div .board.edu ul li dl dd strong {color:#909090; font-weight:500; font-size:14px;}
+section .cont > div .board.edu ul li.no_text {padding:17px 0;}
+
+/* 게시판 교육신청 완료 */
+section .cont > div .edu.comp .complete {border:1px solid #c8c8c8; border-top:2px solid #666; background:url(../img/ico/ico_comp_edu.png) no-repeat 79px center; background-size:100px 76px; padding:86px 0 86px 228px;}
+section .cont > div .edu.comp .complete strong {font-size:30px; font-weight:500; color:#333;}
+section .cont > div .edu.comp .complete strong span {color:#b58913; font-size:30px; font-weight:500;}
+section .cont > div .edu.comp .complete p {font-size:15px; font-weight:300; color:#666; margin-top:20px;}
+
+/* 페이징 및 등록버튼 영역 */
+section .cont > div .board_lower .btn_area {overflow:hidden; margin-top:40px;}
+section .cont > div .board_lower .btn_area a {float:right; display:inline-block; font-size:15px; color:#fff; font-weight:500; text-align:center; background:#b58913; height:46px; line-height:46px; padding:0 20px; min-width:80px;}
+section .cont > div .board_lower .paging {overflow:hidden; display:table; margin:40px auto;}
+section .cont > div .board_lower .paging > a {float:left; display:inline-block; width:28px; height:28px; line-height:28px; border:1px solid #e7e7e7; text-indent:-9999px; margin-right:10px;}
+section .cont > div .board_lower .paging > a:nth-child(1) {background:url(../img/ico/ico_first_paging.png) no-repeat center center; background-size:9px 10px;} /* 처음 */
+section .cont > div .board_lower .paging > a:nth-child(2) {background:url(../img/ico/ico_prev_paging.png) no-repeat center center; background-size:5px 10px;} /* 이전 */
+section .cont > div .board_lower .paging > a:nth-child(4) {background:url(../img/ico/ico_next_paging.png) no-repeat center center; background-size:5px 10px;} /* 다음 */
+section .cont > div .board_lower .paging > a:nth-child(5) {background:url(../img/ico/ico_last_paging.png) no-repeat center center; background-size:9px 10px;} /* 끝 */
+section .cont > div .board_lower .paging > a:last-child {margin-right:0;}
+section .cont > div .board_lower .paging > a:hover,
+section .cont > div .board_lower .paging > a:focus,
+section .cont > div .board_lower .paging > a:active {border:1px solid #b58913; color:#b58913;}
+section .cont > div .board_lower .paging ul {float:left; display:inline-block; margin:0 20px 0 10px; overflow:hidden;}
+section .cont > div .board_lower .paging ul li {float:left; margin-right:10px;}
+section .cont > div .board_lower .paging ul li a {display:inline-block; width:28px; height:28px; line-height:28px; border:1px solid #e7e7e7; color:#666; font-size:15px; font-weight:300; text-align:center;}
+section .cont > div .board_lower .paging ul li a:hover,
+section .cont > div .board_lower .paging ul li a:focus,
+section .cont > div .board_lower .paging ul li a:active {border:1px solid #b58913; color:#b58913;}
+section .cont > div .board_lower .paging ul li strong {display:inline-block; width:30px; height:30px; line-height:30px; border:none; background:#b58913; color:#fff; font-size:15px; font-weight:300; text-align:center;}
+section .cont > div .board_lower .paging ul li:last-child {margin-right:0;}
+
+/* 게시판 기본형(공지사항) VIEW */
+section .cont > div .board_view .view_header {padding:30px 20px; border-top:2px solid #666;}
+section .cont > div .board_view .view_header h3 {font-size:24px; font-weight:700; color:#333; margin-bottom:20px; line-height:32px; text-align:justify;}
+section .cont > div .board_view .view_header > dl dt {font-size:15px; font-weight:300; color:#666; height:15px; line-height:15px; display:inline-block; padding-left:12px;}
+section .cont > div .board_view .view_header > dl dt:first-child {padding-left:0;}
+section .cont > div .board_view .view_header > dl dd {font-size:15px; font-weight:300; color:#666; padding-right:15px; border-right:1px solid #c8c8c8; display:inline-block; padding-left:3px;}
+section .cont > div .board_view .view_header > dl dd:last-child {border-right:none;}
+section .cont > div .board_view .view_header > dl dd img {margin:0 0 3px 6px;}
+section .cont > div .board_view .view_text {border-top:1px solid #e7e7e7; border-bottom:1px solid #e7e7e7; padding:50px 20px;}
+section .cont > div .board_view .view_text img {width:100%;}
+section .cont > div .board_view .view_text img + p {margin-top:20px; text-align:justify;}
+section .cont > div .board_view .view_text p {font-size:15px; color:#666; line-height:25px; font-weight:300;}
+section .cont > div .board_view .view_nav dl {overflow:hidden; margin-top:30px;}
+section .cont > div .board_view .view_nav dt {display:inline-block; width:89px; height:48px; line-height:48px; padding-left:30px; font-size:15px; font-weight:500; color:#333;}
+section .cont > div .board_view .view_nav dd {display:inline-block; width:339px; height:48px; line-height:48px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; border:1px solid #c8c8c8; border-left:none; padding:0 20px;}
+section .cont > div .board_view .view_nav dt.prev {float:left; border:1px solid #c8c8c8; border-left:none; background:#f7f6f5 url(../img/bl/bl_board_prev.png) no-repeat 84px center;}
+section .cont > div .board_view .view_nav dd.prev {float:left;}
+section .cont > div .board_view .view_nav dt.next {float:right; border:1px solid #c8c8c8; border-right:none; background:#f7f6f5 url(../img/bl/bl_board_next.png) no-repeat 84px center;}
+section .cont > div .board_view .view_nav dd.next {float:right; border-right:none; width:340px;}
+section .cont > div .board_view .view_nav dd a {font-size:15px; color:#666; font-weight:300;}
+section .cont > div .board_view .view_nav dd a:hover,
+section .cont > div .board_view .view_nav dd a:focus,
+section .cont > div .board_view .view_nav dd a:active {color:#b58913; font-weight:500;}
+/*
+section .cont > div .board_view .btn_area {overflow:hidden; margin-top:40px;}
+section .cont > div .board_view .btn_area a,
+section .cont > div .board_view .btn_area button {display:inline-block; font-size:15px; color:#fff; font-weight:500; text-align:center; background:#b58913; height:46px; line-height:46px; padding:0; float:right; width:120px;}
+section .cont > div .board_view .btn_area.btn3 > div {float:right;}
+section .cont > div .board_view .btn_area.btn3 > div a {float:left; background:#596168;}
+section .cont > div .board_view .btn_area.btn3 > div a:nth-child(2) {margin-left:6px;}
+section .cont > div .board_view .btn_area.btn3 > div button {margin-left:8px;}
+*/
+
+/* 게시판 교육후기 VIEW */
+section .cont > div .board_view.review .view_header .point img {margin:0 0 3px 6px;}
+
+/* 게시판 QNA VIEW */
+section .cont > div .board_view.qna .qna_box {padding:0 20px 50px 20px; border-top:1px solid #e7e7e7; border-bottom:1px solid #e7e7e7;}
+section .cont > div .board_view.qna .qna_box .que {overflow:hidden;}
+section .cont > div .board_view.qna .qna_box .que dt {text-indent:-9999px; display:inline-block; width:110px; height:139px; float:left; background:url(../img/bl/bl_q_qna.png) no-repeat 40px 57px; }
+section .cont > div .board_view.qna .qna_box .que dd {display:inline-block; width:760px; float:left; padding:45px 90px 35px 0;}
+section .cont > div .board_view.qna .qna_box .que dd div p {font-size:15px; font-weight:300; color:#666; line-height:30px;}
+section .cont > div .board_view.qna .qna_box .ans {border:1px solid #e7e7e7; background:#f6f5f4; position:relative;}
+section .cont > div .board_view.qna .qna_box .ans dt {text-indent:-9999px; display:inline-block; position:absolute; width:30px; height:30px; top:40px; left:40px; background:url(../img/bl/bl_a_qna.png) no-repeat;}
+section .cont > div .board_view.qna .qna_box .ans dd {position:relative; padding:80px 89px 30px 109px;}
+section .cont > div .board_view.qna .qna_box .ans dd strong {font-weight:500; font-size:18px; color:#333; position:absolute; top:40px; left:109px;}
+section .cont > div .board_view.qna .qna_box .ans dd div p {font-size:15px; font-weight:300; color:#666; line-height:30px;}
+
+/* 견적문의, QNA작성, 교육후기작성, 회원가입 및 정보수정 */
+section .cont > div .custom_write h3 {font-size:26px; font-weight:700; color:#333; line-height:26px; margin-bottom:21px;}
+section .cont > div .custom_write h3 span {font-size:26px; line-height:26px; color:#ac8724; padding-right:7px;}
+section .cont > div .custom_write dl {border-top:2px solid #666; overflow:hidden;}
+section .cont > div .custom_write dl dt,
+section .cont > div .custom_write dl dd {display:inline-block; border-bottom:1px solid #e7e7e7; float:left; min-height:49px; line-height:49px;}
+section .cont > div .custom_write dl dt {width:178px; border-right:1px solid #e7e7e7; padding-left:21px; background:#f6f5f4;}
+section .cont > div .custom_write dl dt.exep {min-height:74px; line-height:74px;}
+section .cont > div .custom_write dl dt label {font-size:15px; font-weight:500; color:#333;}
+section .cont > div .custom_write dl dt label + .must {margin-left:9px;}
+section .cont > div .custom_write dl dd {width:779px; padding-left:21px; overflow:hidden;}
+section .cont > div .custom_write dl dd p {font-size:15px; font-weight:300; color:#666; padding-bottom:10px;}
+section .cont > div .custom_write dl dd input[type="text"],
+section .cont > div .custom_write dl dd input[type="password"] {width:178px; height:28px; line-height:28px; border:1px solid #c8c8c8; padding:0 10px; font-weight:300; font-size:15px; color:#333;}
+section .cont > div .custom_write dl dd select {width:200px; height:30px; line-height:30px; border:1px solid #c8c8c8; padding:0 10px; font-weight:300; font-size:15px; color:#333; margin-left:5px}
+section .cont > div .custom_write dl dd input.long {width:248px;}
+section .cont > div .custom_write dl dd input.short {width:78px;}
+section .cont > div .custom_write dl dd input.year {float:left; margin-top:10px;}
+section .cont > div .custom_write dl dd input[type="text"] + em {font-size:15px; font-weight:300; color:#666; line-height:30px; float:left; margin-top:10px; margin-left:9px;}
+section .cont > div .custom_write dl dd em.pc {line-height:49px; font-weight:500; font-size:15px; color:#b58913;}
+section .cont > div .custom_write dl dd .disabled {background:#f6f5f4;}
+section .cont > div .custom_write dl dd .disabled:hover,
+section .cont > div .custom_write dl dd .disabled:active,
+section .cont > div .custom_write dl dd .disabled:focus {border:1px solid #c8c8c8;}
+section .cont > div .custom_write dl dd input + span {display:inline-block; padding:0 5px;}
+section .cont > div .custom_write dl dd input + a,
+section .cont > div .custom_write dl dd select + a {display:inline-block; width:68px; height:28px; line-height:28px; font-size:14px; color:#596168; border:1px solid #596168; text-align:center; margin-left:8px; position:relative; top:3px;}
+section .cont > div .custom_write dl dd input:focus,
+section .cont > div .custom_write dl dd textarea:focus {border:1px solid #b58913;} {border:1px solid #b58913;}
+section .cont > div .custom_write dl dd.gender {overflow:hidden;}
+section .cont > div .custom_write dl dd.gender a {float:left; display:inline-block; width:98px; height:28px; line-height:28px; border:1px solid #c8c8c8; text-align:center; font-size:15px; color:#666; font-weight:300; margin-top:10px;}
+section .cont > div .custom_write dl dd.gender a.on {background:#b58913; border:1px solid #b58913; color:#fff;}
+section .cont > div .custom_write dl dd.password span {display:inline-block; background:url(../img/bl/bl_pw_default.png) no-repeat; min-width:15px; height:15px; padding-left:21px; font-size:13px; text-indent:-9999px; margin-left:10px;}
+section .cont > div .custom_write dl dd.password .pass {display:none; background:url(../img/bl/bl_pw_pass.png) no-repeat; color:#00b76c; text-indent:0;}
+section .cont > div .custom_write dl dd.password .fail {display:none; background:url(../img/bl/bl_pw_fail.png) no-repeat; color:#ef004f; text-indent:0;}
+section .cont > div .custom_write dl dd.confirm .pass {display:none; background:url(../img/bl/bl_pwre_pass.png) no-repeat;}
+section .cont > div .custom_write dl dd.confirm .fail {display:none; background:url(../img/bl/bl_pwre_fail.png) no-repeat;}
+section .cont > div .custom_write dl dd.public span {display:inline-block; overflow:hidden; position:relative; top:4px; float:left; margin-top:10px;}
+section .cont > div .custom_write dl dd.public span input {width:15px; float:left;}
+section .cont > div .custom_write dl dd.public span label {font-size:15px; font-weight:300; color:#666; float:right; margin-top:3px; margin-right:15px;}
+section .cont > div .custom_write dl dd.point div {margin-top:15px;}
+section .cont > div .custom_write dl dd.point div a {display:inline-block; width:18px; height:18px; text-indent:-9999px; float:left; background:url(../img/ico/ico_nopoint_review.png) no-repeat; margin-right:5px;}
+section .cont > div .custom_write dl dd.point div a.on {background:url(../img/ico/ico_point_review.png) no-repeat;}
+section .cont > div .custom_write dl dd.tit input {width:728px;}
+section .cont > div .custom_write dl dt.text {min-height:170px; line-height:170px;}
+section .cont > div .custom_write dl dd.text {min-height:149px; padding:10px 0 10px 21px;}
+section .cont > div .custom_write dl dd textarea {width:728px; height:128px; padding:10px; font-weight:300; font-size:15px; color:#333;}
+section .cont > div .custom_write dl + .common {margin-top:15px;}
+section .cont > div .custom_write dl + .more {margin-top:40px;}
+section .cont > div .custom_write .common {font-size:15px; color:#666; font-weight:300; padding-left:11px; line-height:30px; background:url(../img/bl/bl_dot.png) no-repeat 0 15px; margin-left:5px;}
+section .cont > div .custom_write .more {margin-top:40px; margin-bottom:20px;}
+section .cont > div .custom_write .must {display:inline-block; width:10px; background:url(../img/bl/bl_must.png) no-repeat 0 center; text-indent:-9999px;}
+
+/* 아이디 및 비밀번호 찾기 결과 */
+section .cont > div dl.result {margin-top:63px; text-align:center; height:149px; line-height:149px; border-top:2px solid #666; border-bottom:1px solid #c8c8c8;}
+section .cont > div dl.result dt,
+section .cont > div dl.result dd {display:inline-block; font-size:18px;}
+section .cont > div dl.result dt {font-weight:500; color:#333;}
+section .cont > div dl.result dd {font-weight:300; color:#666; margin-left:20px;}
+
+/* 제품 LIST */
+section .cont > div .prod ul {overflow:hidden;}
+section .cont > div .prod ul li {float:left; margin-left:24px; padding-bottom:30px;}
+section .cont > div .prod ul li:nth-child(4n-3) {margin-left:0;}
+section .cont > div .prod ul li:nth-child(even) {padding-top:20px;}
+section .cont > div .prod ul li a {display:inline-block; position:relative; width:232px; height:365px; border-bottom:1px solid #e7e7e7;}
+section .cont > div .prod ul li a > div {padding:2px;}
+section .cont > div .prod ul li a:hover > div,
+section .cont > div .prod ul li a:focus > div,
+section .cont > div .prod ul li a:active > div {background:#b58913;}
+section .cont > div .prod ul li a div img {border:1px solid #c8c8c8;}
+section .cont > div .prod ul li a:hover > div img,
+section .cont > div .prod ul li a:focus > div img,
+section .cont > div .prod ul li a:active > div img {border:1px solid #b58913;}
+section .cont > div .prod ul li p {padding:20px; padding-bottom:0; font-size:15px; font-weight:300; color:#666; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; margin-bottom:20px; height:35px; line-height:1.2;}
+section .cont > div .prod ul li strong {display:block; padding:0 20px; font-size:15px; color:#333; font-weight:500; -webkit-line-clamp:2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; height:35px; line-height:1.2;}
+section .cont > div .prod ul li a:hover p,
+section .cont > div .prod ul li a:focus p,
+section .cont > div .prod ul li a:active p,
+section .cont > div .prod ul li a:hover strong,
+section .cont > div .prod ul li a:focus strong,
+section .cont > div .prod ul li a:active strong {color:#b58913;}
+section .cont > div .prod > a {margin-top:20px; display:block; height:38px; line-height:38px; border:1px solid #596168; text-align:center; }
+section .cont > div .prod > a span {font-size:14px; color:#596168; font-weight:300; padding-right:24px; background:url(../img/bl/bl_list_more.png) no-repeat right center;}
+
+/* 제품 VIEW */
+section .cont > div .prod_view {border-top:2px solid #666; padding-top:50px; overflow:hidden;}
+section .cont > div .prod_view h3 {float:right; width:449px; font-size:26px; font-weight:700; color:#333; line-height:30px; overflow:hidden; padding-left:50px; border-left:1px solid #e7e7e7;}
+section .cont > div .prod_view .img_box {float:left; width:450px; margin-bottom:50px;}
+section .cont > div .prod_view .img_box .view {border:1px solid #c8c8c8;}
+section .cont > div .prod_view .img_box .img_list {background:#f6f5f4; position:relative; padding:10px 52px; border:1px solid #c8c8c8; border-top:none; width:344px;}
+section .cont > div .prod_view .img_box .img_list .img_view {overflow:hidden; width:344px; height:80px;}
+section .cont > div .prod_view .img_box .img_list ul {overflow:hidden;}
+section .cont > div .prod_view .img_box .img_list ul li {float:left; margin-left:8px;}
+section .cont > div .prod_view .img_box .img_list ul li:nth-child(4n-3) {margin-left:0;}
+section .cont > div .prod_view .img_box .img_list ul li:first-child {margin-left:0;}
+section .cont > div .prod_view .img_box .img_list ul li a {display:inline-block; border:1px solid #c8c8c8;}
+section .cont > div .prod_view .img_box .img_list ul li a:hover,
+section .cont > div .prod_view .img_box .img_list ul li a:focus,
+section .cont > div .prod_view .img_box .img_list ul li a:active {border:1px solid #b58913;}
+section .cont > div .prod_view .img_box .img_list > a {position:absolute; display:inline-block; width:30px; height:40px; text-indent:-9999px; top:26px;}
+section .cont > div .prod_view .img_box .img_list > a.prev {background:#e7e7e7 url(../img/ico/ico_prev_prodlist.png) no-repeat center center; left:0;}
+section .cont > div .prod_view .img_box .img_list > a.prev:hover,
+section .cont > div .prod_view .img_box .img_list > a.prev:focus,
+section .cont > div .prod_view .img_box .img_list > a.prev:active {background:#b58913 url(../img/ico/ico_prev_prodlist_on.png) no-repeat center center;}
+section .cont > div .prod_view .img_box .img_list > a.next {background:#e7e7e7 url(../img/ico/ico_next_prodlist.png) no-repeat center center; right:0;}
+section .cont > div .prod_view .img_box .img_list > a.next:hover,
+section .cont > div .prod_view .img_box .img_list > a.next:focus,
+section .cont > div .prod_view .img_box .img_list > a.next:active {background:#b58913 url(../img/ico/ico_next_prodlist_on.png) no-repeat center center;}
+section .cont > div .prod_view .img_box .img_lower {margin-top:20px; float:right;}
+section .cont > div .prod_view .img_box .img_lower ul {overflow:hidden; margin-right:30px; display:inline-block; float:left;}
+section .cont > div .prod_view .img_box .img_lower li {float:left;}
+section .cont > div .prod_view .img_box .img_lower li a {display:inline-block; width:30px; height:30px; margin-left:10px; text-indent:-9999px;}
+section .cont > div .prod_view .img_box .img_lower li:nth-child(1) a {background:url(../img/ico/ico_fb_gnb.png) no-repeat;} /* 페이스북 */
+section .cont > div .prod_view .img_box .img_lower li:nth-child(2) a {background:url(../img/ico/ico_pin_gnb.png) no-repeat;} /* 핀터레스트 */
+section .cont > div .prod_view .img_box .img_lower li:nth-child(3) a {background:url(../img/ico/ico_ins_gnb.png) no-repeat;} /* 인스타그램 */
+section .cont > div .prod_view .img_box .img_lower li:first-child a {margin-left:0;}
+section .cont > div .prod_view .img_box .img_lower > a {display:inline-block; width:72px; line-height:28px; height:28px; font-size:13px; font-weight:500; color:#596168; text-align:center;border:1px solid #596168;}
+section .cont > div .prod_view dl {float:right; width:449px; border-left:1px solid #e7e7e7; padding:50px 0 0 50px; min-height:0px; margin-bottom:50px;}
+section .cont > div .prod_view dl dt {font-size:18px; font-weight:500; color:#333; margin-bottom:20px; margin-top:35px;}
+section .cont > div .prod_view dl dt:first-child {margin-top:0;}
+section .cont > div .prod_view dl dd div p {line-height:25px; font-size:15px; font-weight:300; color:#666;}
+section .cont > div .prod_view .rela {clear:both; border-top:1px solid #c8c8c8; padding-top:100px;}
+section .cont > div .prod_view .rela > p {font-weight:700; font-size:24px; color:#333; margin-bottom:30px;}
+section .cont > div .prod_view .rela .rela_prod {position:relative;}
+section .cont > div .prod_view .rela .rela_prod ul {overflow:hidden;}
+section .cont > div .prod_view .rela .rela_prod ul li {float:left; margin-left:24px; width:232px; border-bottom:1px solid #e7e7e7;}
+section .cont > div .prod_view .rela .rela_prod ul li:first-child {margin-left:0;}
+section .cont > div .prod_view .rela .rela_prod ul li a {display:inline-block;}
+section .cont > div .prod_view .rela .rela_prod ul li a div {display:inline-block; width:226px; height:224px; border:1px solid #c8c8c8; padding:2px;}
+section .cont > div .prod_view .rela .rela_prod ul li a:hover div,
+section .cont > div .prod_view .rela .rela_prod ul li a:focus div,
+section .cont > div .prod_view .rela .rela_prod ul li a:active div {border:1px solid #b58913; background:#b58913;}
+section .cont > div .prod_view .rela .rela_prod ul li a p {padding:20px 20px 30px 20px;}
+section .cont > div .prod_view .rela .rela_prod ul li a p span {display:inline-block; font-size:15px; font-weight:500; color:#333; line-height:1.2; height:35px; overflow:hidden;}
+section .cont > div .prod_view .rela .rela_prod ul li a:hover p span,
+section .cont > div .prod_view .rela .rela_prod ul li a:focus p span,
+section .cont > div .prod_view .rela .rela_prod ul li a:active p span {color:#b58913;}
+section .cont > div .prod_view .rela .rela_prod ul li.no_result {width:100%; margin-left:0; text-align:center; padding:50px 0; font-size:16px; font-weight:500; border-top:2px solid #666;}
+section .cont > div .prod_view .rela .rela_prod > a {position:absolute; top:0;}
+
+/* 프로모션 이벤트 LIST */
+section .event_list {overflow:hidden;}
+section .event_list ul li {width:480px; height:369px; float:left; border-bottom:1px #e7e7e7 solid; padding-top:50px;}
+section .event_list ul li > .event_img {position:relative;}
+section .event_list ul li div.cont {padding:0 20px;}
+section .event_list ul li:first-child,
+section .event_list ul li:first-child + li {padding-top:0;}
+section .event_list ul li div.cont h3.title {line-height:27px; font-size:20px; padding:15px 0; color:#333; overflow:hidden; height:40px;}
+section .event_list ul li dl,
+section .event_list ul li dt, 
+section .event_list ul li dd {font-size:15px; color:#666; line-height:15px; display:inline-block;}
+section .event_list ul li dt.mail {padding-left:15px;}
+section .event_list ul li dl dd {border-right:1px #c8c8c8 solid; padding-right:15px;}
+section .event_list ul li dl dd:last-child {border-right:0 none;}
+section .event_list ul li dd {padding-left:3px;}
+section .event_list ul li a {display:inline-block; border:1px #c8c8c8 solid; width:478px; height:238px; background:url(../img/bg/bg_noimg_product.png) no-repeat center center;}
+section .event_list ul li img {width:478px; height:238px;}
+section .event_list ul li:nth-child(odd) {margin-right:40px;}
+section .event_list ul li div.event_img > div {display:none;}
+section .event_list ul li div.event_img div.ending {display:block !important; width:100%; height:100%; position:absolute; top:0; left:0; background:url(../img/bg/bg_end_product.png); display:none;}
+section .event_list ul li div.event_img div.ending p {font-size:20px; color:#FFF; font-weight:500; padding:20px 26px; border:1px #FFF solid; text-align:center; margin:90px 95px;}
+
+/* 신상품 */
+section .cont > div .new_list {border-top:2px solid #666;}
+section .cont > div .new_list ul li {border-bottom:1px #e7e7e7 solid; padding:60px 0; overflow:hidden;}
+section .cont > div .new_list ul li > div {float:left;}
+section .cont > div .new_list ul li > div.new_img {padding:0 50px;}
+section .cont > div .new_list ul li > div.new_cont {width:574px; padding:0 18px;}
+section .cont > div .new_list ul li > div.new_cont h3 {font-size:24px; color:#333;}
+section .cont > div .new_list ul li > div.new_cont p {font-size:15px; line-height:26px; padding:23px 0 46px 2px; color:#666; font-weight:300; word-break:keep-all;}
+section .cont > div .new_list ul li > div.new_cont div.btn_detail a {background:#b58913; height:46px; line-height:46px; padding:0 30px; display:inline-block; color:#FFF; font-weight:500; font-size:15px; text-align:center;}
+section .cont > div .new_list ul li > div.new_cont div.btn_more {font-size:14px; color:#596168; font-weight:200;}
+section .cont > div .new_list > a {margin-top:20px; display:block; height:38px; line-height:38px; border:1px solid #596168; text-align:center;}
+section .cont > div .new_list > a span {font-size:14px; color:#596168; font-weight:300; padding-right:24px; background:url(../img/bl/bl_list_more.png) no-repeat right center;}
+
+/* 로그인 */
+section .cont > div .login .login_box {padding:60px 240px; overflow:hidden; border-top:2px solid #666; border-bottom:1px solid #c8c8c8;}
+section .cont > div .login .login_box .left {width:400px;}
+section .cont > div .login .login_box .right {width:120px;}
+section .cont > div .login .login_box .left label {height:30px; line-height:30px; width:70px; display:inline-block; font-size:15px; font-weight:500; color:#333; margin-bottom:15px;}
+section .cont > div .login .login_box .left input {width:278px; height:28px; line-height:28px; border:1px solid #c8c8c8; padding:0 10px; font-weight:300; font-size:15px; color:#333; margin-bottom:15px;}
+section .cont > div .login .login_box .left label:nth-child(3),
+section .cont > div .login .login_box .left input:nth-child(4) {margin-bottom:0;}
+section .cont > div .login .login_box .right button {width:120px; height:75px; line-height:75px; text-align:center; color:#fff; background:#b58913; font-size:15px; font-weight:500;}
+section .cont > div .login .login_box > div {float:left;}
+section .cont > div .login .login_menu {margin-top:59px; overflow:hidden;}
+section .cont > div .login .login_menu li {float:left; display:inline-block; width:326px; height:238px; border:1px solid #c8c8c8; margin-left:8px; position:relative;}
+section .cont > div .login .login_menu li:first-child {margin-left:0;}
+section .cont > div .login .login_menu li:nth-child(1) {background:#f7f6f5 url(../img/ico/ico_join_login.png) no-repeat center 40px; background-size:38px 49px;}
+section .cont > div .login .login_menu li:nth-child(2) {background:#f7f6f5 url(../img/ico/ico_findid_login.png) no-repeat center 44px; background-size:38px 40px;}
+section .cont > div .login .login_menu li:nth-child(3) {background:#f7f6f5 url(../img/ico/ico_findpw_login.png) no-repeat center 43px; background-size:40px 42px;}
+section .cont > div .login .login_menu li p {position:absolute; font-size:15px; font-weight:300; color:#666; text-align:center; top:110px; width:100%;}
+section .cont > div .login .login_menu li a {position:absolute; display:inline-block; color:#fff; font-size:15px; text-align:center; font-weight:500; width:120px; height:46px; line-height:46px; left:103px; bottom:39px; background:#b58913;}
+section .cont > div .login .login_menu li a.grey {background:#596168;}
+
+/* 회원가입 */
+section .cont > div .join {text-indent:-9999px; width:1000px; height:55px; margin-bottom:60px;}
+section .cont > div .join.step1 {background:url(../img/bg/bg_step1_join.png) no-repeat;}
+section .cont > div .join.step2 {background:url(../img/bg/bg_step2_join.png) no-repeat;}
+section .cont > div .join.step3 {background:url(../img/bg/bg_step3_join.png) no-repeat;}
+section .cont > div .edu.comp.join_comp .complete {background:url(../img/ico/ico_comp_join.png) no-repeat 87px 69px; background-size:92px 96px;}
+
+/* 스타일리스트 검색 */
+section .cont > div .style h3 + ul li {font-size:15px; color:#666; font-weight:300; line-height:30px; margin-top:5px; padding-left:17px; background:url(../img/bl/bl_dot.png) no-repeat 5px 15px;}
+section .cont > div .style .search_box {background:#f6f5f4; border:1px solid #c8c8c8; padding:39px 49px; overflow:hidden; margin-top:30px;}
+section .cont > div .style .search_box input,
+section .cont > div .style .search_box select {height:28px; line-height:28px; border:1px solid #c8c8c8; padding:0 10px; font-weight:300; font-size:15px; color:#333; margin-right:27px;}
+section .cont > div .style .search_box input {width:278px;}
+section .cont > div .style .search_box select {width:300px;}
+section .cont > div .style .search_box .left {width:780px; float:left;}
+section .cont > div .style .search_box .right {width:120px; float:right;}
+section .cont > div .style .search_box .left label {display:inline-block; font-size:15px; color:#333; font-weight:500; height:30px; line-height:30px;}
+section .cont > div .style .search_box .left label:nth-child(1),
+section .cont > div .style .search_box .left label:nth-child(5) {width:50px;}
+section .cont > div .style .search_box .left label:nth-child(3),
+section .cont > div .style .search_box .left label:nth-child(7) {width:67px;}
+section .cont > div .style .search_box .right button {display:inline-block; width:120px; height:75px; line-height:75px; color:#fff; background:#b58913; font-size:15px; font-weight:500; text-align:center;}
+section .cont > div .style .search_box .left *:nth-child(1),
+section .cont > div .style .search_box .left *:nth-child(2),
+section .cont > div .style .search_box .left *:nth-child(3),
+section .cont > div .style .search_box .left *:nth-child(4) {margin-bottom:15px;}
+section .cont > div .style .style_list {margin-top:50px; border-top:2px solid #666;}
+section .cont > div .style .style_list li {padding:40px 20px; border-bottom:1px solid #e7e7e7; overflow:hidden;}
+section .cont > div .style .style_list li .image,
+section .cont > div .style .style_list li .no_image {float:left; border:1px solid #c8c8c8; width:268px; height:238px;}
+section .cont > div .style .style_list li .no_image {text-indent:-9999px; background:#f6f5f4 url(../img/ico/ico_noimage_style.png) no-repeat center center; background-size:70px 73px;}
+section .cont > div .style .style_list li .data {float:left; margin-left:40px; padding-top:10px;}
+section .cont > div .style .style_list li .data img {float:left;}
+section .cont > div .style .style_list li .data span {font-size:20px; line-height:20px; display:inline-block; height:20px; font-weight:500; color:#333; margin-left:10px;}
+section .cont > div .style .style_list li table {margin-top:10px; width:100%;}
+section .cont > div .style .style_list li table tr th,
+section .cont > div .style .style_list li table tr td {font-size:15px; line-height:30px; font-weight:300;}
+section .cont > div .style .style_list li table tr th {color:#333; width:160px;}
+section .cont > div .style .style_list li table tr td {color:#666; width:490px;}
+section .cont > div .style > a {margin-top:20px; display:block; height:38px; line-height:38px; border:1px solid #596168; text-align:center;}
+section .cont > div .style > a span {font-size:14px; color:#596168; font-weight:300; padding-right:24px; background:url(../img/bl/bl_list_more.png) no-repeat right center;}
+section .cont > div .style .style_list .no_result {height:149px; display:table; padding:0; width:100%;}
+section .cont > div .style .style_list .no_result p {font-weight:500; color:#333; font-size:18px; display:table-cell; vertical-align:middle; text-align:center; line-height:30px;}
+section .cont > div .style .style_list .no_result p span {font-weight:500; color:#b58913; font-size:18px;}
+
+/* 이용약관, 개인정보취급방침 */
+section .cont > div .term h3 {font-size:20px; font-weight:500; color:#333; line-height:20px; margin-bottom:25px; margin-top:50px; padding-left:18px; background:url(../img/bl/bl_h3_term.png) no-repeat 0 6px;}
+section .cont > div .term h3:first-child {margin-top:0;}
+section .cont > div .term span {display:inline-block; font-size:15px; font-weight:500; color:#333; height:38px; line-height:38px; margin-top:10px;}
+section .cont > div .term p,
+section .cont > div .term li {font-size:15px; font-weight:300; color:#666; line-height:30px;}
+section .cont > div .term > li {padding-left:15px; text-indent:-15px;}
+section .cont > div .term .last {margin-top:45px;}
+section .cont > div .term ol li ol {padding-left:20px;}
+section .cont > div .term ol li ol li {padding-left:20px; text-indent:-20px;}
+section .cont > div .term ul {padding-left:20px;}
+section .cont > div .term h3 + p {margin-bottom:0;}
+section .cont > div .term ul li {background:url(../img/bl/bl_dot.png) no-repeat 0 15px; padding-left:8px;}
+
+/* 제품 가이드 */
+section .cont > div .guide_list {overflow:hidden; padding-top:20px;}
+section .cont > div .guide_list li {display:inline-block; float:left; width:232px; border-bottom:1px solid #e7e7e7; margin-left:24px; margin-bottom:50px;}
+section .cont > div .guide_list li:nth-child(4n+1) {margin-left:0;}
+section .cont > div .guide_list li p {text-align:center; font-size:15px; color:#666; width:232px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-weight:300; line-height:59px;}
+section .cont > div .guide_list .guide_box {position:relative;}
+section .cont > div .guide_list .guide_box > img {border:1px solid #c8c8c8;}
+section .cont > div .guide_list .guide_box .view {position:absolute; left:0; top:0; width:100%; height:100%;}
+section .cont > div .guide_list .guide_box .view img {position:absolute; left:calc(50% - 20px); top:calc(50% - 20px); visibility:hidden;}
+section .cont > div .guide_list a:hover .guide_box .view,
+section .cont > div .guide_list a:focus .guide_box .view,
+section .cont > div .guide_list a:active .guide_box .view {background:#b58913; opacity:0.9;}
+section .cont > div .guide_list a:hover .guide_box .view img,
+section .cont > div .guide_list a:focus .guide_box .view img,
+section .cont > div .guide_list a:active .guide_box .view img {visibility:visible;}
+section .cont > div .guide_list li.no_result {width:100%; margin-left:0; text-align:center; padding:50px 0; font-size:16px; font-weight:500; border-top:2px solid #666;}
+
+/* 스타일리스트 소개글 */
+section .cont > div .style_intro p,
+section .cont > div .style_intro li {font-size:15px; font-weight:300; color:#666; line-height:30px;}
+section .cont > div .style_intro h3 + p {margin-top:0;}
+section .cont > div .style_intro h4 {font-size:20px; font-weight:500; color:#333; line-height:20px; margin-bottom:25px; margin-top:50px; padding-left:18px; background:url(../img/bl/bl_h3_term.png) no-repeat 0 6px;}
+section .cont > div .style_intro li {line-height:35px; padding-left:16px; background:url(../img/bl/bl_dot.png) no-repeat 5px 17px;}
+
+/* 아카데미 수석인증 강사 리스트  */
+section .cont > div .senior_list li {display:inline-block; width:232px; float:left; margin-left:24px; border-bottom:1px solid #e7e7e7; margin-bottom:50px;}
+section .cont > div .senior_list li:nth-child(4n+1) {margin-left:0;}
+section .cont > div .senior_list li div {text-align:center;}
+section .cont > div .senior_list li .nation {margin-top:15px;}
+section .cont > div .senior_list li .rank {margin:15px 0 0 10px;}
+section .cont > div .senior_list li .personal {border:1px solid #c8c8c8;}
+section .cont > div .senior_list li div p {font-size:16px; color:#666; font-weight:300; line-height:31px; margin-bottom:14px;}
+
+/* 회원가입 약관동의 */
+section .cont > div .term_box {border:1px solid #c8c8c8; border-top:2px solid #666; position:relative;}
+section .cont > div .term_box .agree {background:#f6f5f4; border-bottom:1px solid #c8c8c8; padding:18px 0 16px 19px; position:absolute; top:0; width:calc(100% - 19px); height:25px;}
+section .cont > div .term_box .agree a {display:inline-block; width:24px; height:24px; text-indent:-9999px; margin-right:10px; float:left; background:url(../img/ico/ico_chk_agree.png) no-repeat; background-size:24px 24px;}
+section .cont > div .term_box .agree a.on {background:url(../img/ico/ico_chkon_agree.png) no-repeat; background-size:24px 24px;}
+section .cont > div .term_box .agree span {font-size:15px; line-height:24px; font-weight:300; color:#666;}
+section .cont > div .term_box .agree span.on {font-weight:500; color:#b58913;}
+section .cont > div .term_box .term {padding:20px; height:200px; margin-top:60px; overflow-y:scroll;}
+section .cont > div .term_box .term h3 {background:none; padding-left:0; font-size:14px; font-weight:300; margin-bottom:0;}
+section .cont > div .term_box .term p,
+section .cont > div .term_box .term li,
+section .cont > div .term_box .term span {font-size:14px; font-weight:300; color:#666; line-height:30px;}
+section .cont > div .term_box .term span {height:30px; margin-top:30px;}
+section .cont > div .term_box .term li {padding-left:11px; text-indent:-11px;}
+section .cont > div .term_box .term .type02 li {padding-left:15px; text-indent:-15px;}
+section .cont > div .term_box .term ol li ol {padding-left:0;}
+section .cont > div .term_box .term ul {padding-left:0;}
+section .cont > div .term_box .term ul li {padding-left:6px; text-indent:0;}
+section .cont > div .term_box.per {margin-top:50px;}
+section .cont > div .term_box.per .term h3 {margin-bottom:15px; background:url(../img/bl/bl_dot.png) no-repeat 0 5px; background-size:12px 12px; padding-left:15px;}
+
+/* 교육과정 */
+section .cont > div .tab_menu + p {font-size:15px; font-weight:300; color:#666; line-height:30px;}
+section .cont > div .edu_list {border-top:2px solid #666; margin-top:40px;}
+section .cont > div .edu_list li {border-bottom:1px solid #e7e7e7; display:table; width:100%; background-size:74px 74px; background-position:30px center; background-repeat:no-repeat;}
+section .cont > div .edu_list li .intro {width:636px; padding:30px 0 30px 164px;}
+section .cont > div .edu_list li .intro span {font-weight:500; font-size:20px; line-height:40px; color:#333;}
+section .cont > div .edu_list li .intro p {font-size:15px; font-weight:300; color:#666; line-height:30px;}
+section .cont > div .edu_list li .info {width:200px; display:table-cell; vertical-align:middle;}
+section .cont > div .edu_list li .info dt,
+section .cont > div .edu_list li .info dd {display:inline-block; font-size:15px; line-height:30px;}
+section .cont > div .edu_list li .info dt {font-weight:500; color:#333; width:56px;}
+section .cont > div .edu_list li .info dd {font-weight:300; color:#666; margin-left:19px; width:115px;}
+section .cont > div .edu_list.edu1 li:nth-child(1) {background-image:url(../img/ico/ico_list1_edu1.png);}
+section .cont > div .edu_list.edu1 li:nth-child(2) {background-image:url(../img/ico/ico_list2_edu1.png);}
+section .cont > div .edu_list.edu1 li:nth-child(3) {background-image:url(../img/ico/ico_list3_edu1.png);}
+section .cont > div .edu_list.edu1 li:nth-child(4) {background-image:url(../img/ico/ico_list4_edu1.png);}
+section .cont > div .edu_list.edu1 li:nth-child(5) {background-image:url(../img/ico/ico_list5_edu1.png);}
+section .cont > div .edu_list.edu2 li:nth-child(1) {background-image:url(../img/ico/ico_list1_edu2.png);}
+section .cont > div .edu_list.edu2 li:nth-child(2) {background-image:url(../img/ico/ico_list2_edu2.png);}
+section .cont > div .edu_list.edu2 li:nth-child(3) {background-image:url(../img/ico/ico_list3_edu2.png);}
+section .cont > div .edu_list.edu2 li:nth-child(4) {background-image:url(../img/ico/ico_list4_edu2.png);}
+section .cont > div .edu_list.edu2 li:nth-child(5) {background-image:url(../img/ico/ico_list5_edu2.png);}
+section .cont > div .edu_list.edu3 li:nth-child(1) {background-image:url(../img/ico/ico_list1_edu3.png);}
+section .cont > div .edu_list.edu3 li:nth-child(2) {background-image:url(../img/ico/ico_list2_edu3.png);}
+section .cont > div .edu_list.edu3 li .intro {width:836px; padding:30px 0 30px 164px;}
+
+/* 마이페이지 교육신청정보 */
+section .cont > div .board.myedu .pc > .select {width:79px;}
+section .cont > div .board.myedu .pc > .subject {width:259px;}
+section .cont > div .board.myedu .pc > .term {width:259px;}
+section .cont > div .board.myedu .pc > .time {width:199px;}
+section .cont > div .board.myedu .pc > .price {width:200px;}
+section .cont > div .board.myedu ul li dl dd:nth-child(2) {width:80px;} /* 선택 */
+section .cont > div .board.myedu ul li dl dd:nth-child(4) {width:260px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;} /* 교육과정 */
+section .cont > div .board.myedu ul li dl dd:nth-child(6) {width:260px;} /* 교육기간 */
+section .cont > div .board.myedu ul li dl dd:nth-child(8) {width:200px;} /* 교육시간 */
+section .cont > div .board.myedu ul li dl dd:nth-child(10) {width:200px;} /* 수강료 */
+section .cont > div .board.myedu ul li dl dd:nth-child(4) label {font-size:15px; line-height:29px; height:30px; color:#666;}
+section .cont > div .board.myedu ul li.no_text {color:#333; font-size:18px; font-weight:500;}
+section .cont > div .board.myedu .no_text {color:#333; font-size:18px; font-weight:500; text-align:center; line-height:117px; border-top:2px solid #666; border-bottom:1px solid #c8c8c8;}
+section .cont > div .board.myedu .no_text span {color:#ac8724; font-size:18px; font-weight:500;}
+
+/* 사이트맵 */
+section .cont > div .sitemap {border-top:2px solid #666; border-bottom:1px solid #c8c8c8; overflow:hidden;}
+section .cont > div .sitemap > li {padding:40px 0; overflow:hidden; border-bottom:1px solid #e7e7e7;}
+section .cont > div .sitemap > li:last-child {border-bottom:none;}
+section .cont > div .sitemap > li span {display:inline-block; width:199px; color:#ac8724; font-weight:700; font-size:18px; line-height:20px; border-right:1px solid #c8c8c8; float:left;}
+section .cont > div .sitemap > li > ul {padding-left:240px;}
+section .cont > div .sitemap > li > ul > li {display:inline-block; width:190px; float:left;}
+section .cont > div .sitemap > li > ul > li > a {font-weight:500; color:#666; font-size:18px; line-height:20px;}
+section .cont > div .sitemap > li > ul > li > ul {margin-top:20px;}
+section .cont > div .sitemap > li > ul > li > ul > li {margin-bottom:15px;}
+section .cont > div .sitemap > li > ul > li > ul > li:last-child {margin-bottom:0;}
+section .cont > div .sitemap > li > ul > li > ul > li > a {font-weight:300; color:#909090; font-size:15px; line-height:15px;}
+
+/* ABOUT BRAND */
+section .cont > div .brand > p {font-size:15px; font-weight:300; color:#666; line-height:26px;}
+section .cont > div .brand h3 {margin-top:55px; margin-bottom:32px; font-size:20px; font-weight:500; padding-left:17px; line-height:20px; background:url(../img/bl/bl_h3_term.png) no-repeat 0 center; background-size:12px 12px; padding-bottom:0;}
+section .cont > div .brand .main_tit {font-size:50px; font-weight:700; color:#936d07; line-height:50px; text-align:center; margin-top:63px; margin-bottom:36px;}
+section .cont > div .brand .main_tit span {font-size:50px; font-weight:700; color:#b58913; line-height:50px;}
+section .cont > div .brand .main_text {font-size:24px; font-weight:300; color:#666; text-align:center; margin-bottom:40px;}
+section .cont > div .brand .sub_tit {font-size:24px; font-weight:500; color:#333; text-align:center; margin-top:40px; margin-bottom:25px;}
+section .cont > div .brand .sub_text {font-size:15px; font-weight:300; color:#666; text-align:center; line-height:26px; word-break:keep-all;}
+section .cont > div .brand .con_box {background:url(../img/bg/bg_grid.gif); border:1px solid #c8c8c8; text-align:center; box-sizing:border-box;}
+section .cont > div .brand .con_box img {padding:60px 0;}
+section .cont > div .brand .concept {margin-top:40px; overflow:hidden; margin-bottom:31px;}
+section .cont > div .brand .concept li {display:inline-block; width:244px; border-right:1px solid #e7e7e7; float:left; padding-top:88px; min-height:122px;}
+section .cont > div .brand .concept li:nth-child(1) {background:url(../img/ico/ico_list1_concept.png) no-repeat center 23px; background-size:50px 38px;}
+section .cont > div .brand .concept li:nth-child(2) {background:url(../img/ico/ico_list2_concept.png) no-repeat center 18px; width:254px; background-size:46px 49px;}
+section .cont > div .brand .concept li:nth-child(3) {background:url(../img/ico/ico_list3_concept.png) no-repeat center 18px; width:254px; background-size:40px 50px;}
+section .cont > div .brand .concept li:nth-child(4) {background:url(../img/ico/ico_list4_concept.png) no-repeat center 21px; border-right:none; background-size:44px 44px;}
+section .cont > div .brand .concept li p {font-size:15px; font-weight:300; color:#666; line-height:26px; text-align:center;}
+section .cont > div .brand .concept li .con_tit {font-size:20px; font-weight:500; color:#333; line-height:20px; text-align:center; margin-bottom:13px;}
+section .cont > div .brand .concept li .con_tit span {font-size:20px; font-weight:500; color:#b58913; line-height:20px;}
+section .cont > div .brand .color {overflow:hidden; margin-bottom:15px;}
+section .cont > div .brand .color li {display:inline-block; width:408px; padding:40px; overflow:hidden; background:#f6f5f4; border:1px solid #c8c8c8; float:left;}
+section .cont > div .brand .color li:last-child {margin-left:20px;}
+section .cont > div .brand .color li strong {display:inline-block; width:80px; height:80px; border:1px solid #c8c8c8; box-sizing:border-box; float:left; text-indent:-9999px; margin-right:30px;}
+section .cont > div .brand .color li:first-child strong {background:#000;}
+section .cont > div .brand .color li:last-child strong {background:#fff;}
+section .cont > div .brand .color li p {font-size:18px; font-weight:500; color:#333; line-height:18px; margin-top:10px; margin-bottom:20px;}
+section .cont > div .brand .color li span {font-size:15px; font-weight:300; color:#666; margin-right:20px;}
+section .cont > div .brand .sig li {overflow:hidden; margin-bottom:30px;}
+section .cont > div .brand .sig li:last-child {margin-bottom:0;}
+section .cont > div .brand .sig li div {background:url(../img/bg/bg_grid.gif); border:1px solid #c8c8c8; text-align:center; box-sizing:border-box; float:left; width:320px; height:100px; margin-right:40px;}
+section .cont > div .brand .sig li div img {padding:20px 0; height:59px;}
+section .cont > div .brand .sig li:nth-child(1) div img {width:216px;}
+section .cont > div .brand .sig li:nth-child(2) div img {width:250px;}
+section .cont > div .brand .sig li:nth-child(3) div img {width:200px;}
+section .cont > div .brand .sig li p {font-size:15px; font-weight:300; color:#666; line-height:100px;}
+
+/* 주요커리큘럼 */
+.mainCurr p{line-height:30px;}
+.mainCurr .curr_cont{border:1px #c8c8c8 solid; margin-top:10px; padding:32px 14px 32px 60px;}
+.curr_cont ul{overflow:hidden}
+.curr_cont ul li{padding:8px 0; color:#666; line-height:19px; width:260px; padding-right:38px; font-size:15px; float:left; background:url(../img/bl/bl_dot03.gif) no-repeat 0 17px; padding-left:9px; height:30px;}
+
+/* 교육장소 */
+.edu_place > div.office_add{margin-bottom:60px}
+.edu_place h3{font-size:24px; margin-bottom:30px !important; font-weight:700; color:#333}
+.edu_place > p{padding-left:17px; line-height:27px;}
+.edu_place .place_map{border:1px #d7d7d7 solid; }
+.edu_place > .place_map > p.pc{width:1000px; height:400px;}
+.edu_place .place_map  p img{width:100%}
+.edu_place ul {height:119px; padding-top:20px; border-bottom:1px #e7e7e7 solid;}
+.edu_place ul li{font-size:15px; line-height:30px; background:url(../img/bl/bl_dot03.gif) no-repeat 5px center; padding-left:16px; color:#666; font-weight:300}
+
+/* 교육소개 - BL Lashes 강사진*/
+.teacher h3{height:22px; line-height:23px; font-weight:700 !important}
+.teacher > h3 > span{font-size:18px; font-weight:300; padding-left:20px; vertical-align:top; line-height:23px}
+.teacher div h4{font-size:20px; font-weight:500; background:url(../img/bl/bl_h3_term.png) no-repeat 0 center; padding-left:16px; margin:50px 0 23px}
+.tea_detail div:first-child h4:first-child{margin-top:0}
+
+.teacher .tea_detail {float:right; width:450px; border-left:1px #e7e7e7 solid; padding-left:49px}
+.tea_detail .history ul li{margin-top:5px}
+.tea_detail .history ul li:first-child{margin-top:0}
+
+.tea_detail .career dl:first-child{padding-top:0 !important}
+.teacher div > dl dt, .teacher div > dl dd{line-height:30px; font-size:15px}
+.teacher div > dl{padding-top:6px}
+.teacher div dl.career_lately{padding-top:0;}
+.teacher div > dl dt{float:left; background:url(../img/bl/bl_dot03.gif) no-repeat 5px center; padding-left:16px; font-weight:500}
+.teacher div > dl dd{padding-left:67px; font-weight:300}
+.teacher div > dl dd:first-child{padding-top:6px}
+
+.teacher .qual > ul li,
+.teacher .history > ul li{font-size:15px; line-height:30px;  background:url(../img/bl/bl_dot03.gif) no-repeat 5px 15px; padding-left:16px; font-weight:300}
+.teacher > img{float:left; margin-bottom:10px;}
+
+/*
+.teacher .leture_img{float:left; position:relative; }
+.teacher .leture_img > ul{width:450px; padding-right:50px; padding-top:7px}
+.leture_img > ul > li{float:left; padding-left:3px}
+.leture_img > ul > li:first-child{padding-left:0; padding-top:0}
+.leture_img > ul > li > img{width:146px; border:1px #c8c8c8 solid;}
+.leture_img .img_btn a:first-child{position:absolute; top:130px; left:0}
+.leture_img .img_btn a{position:absolute; top:130px; right:50px}
+
+
+.teacher .leture_img{float:left; position:relative; }
+.teacher .leture_img > ul{width:450px; padding-right:50px; padding-top:7px; overflow:hidden}
+.teacher .leture_img > ul li{float:left; }
+.teacher .leture_img > ul li img{width:450px;}
+.leture_img .img_btn a:first-child{position:absolute; top:230px; left:0}
+.leture_img .img_btn a{position:absolute; top:230px; right:50px}
+
+*/
+
+.teacher .leture_img{float:left; position:relative; width:450px;}
+.teacher .leture_img ul li img{width:450px;}
+.teacher .bx-pager{display:none}
+.leture_img .bx-controls-direction a{text-indent:-9999em; }
+
+.teacher .bx-wrapper .bx-controls-direction a {width:30px; height:40px; position:absolute}
+.leture_img .bx-controls-direction a:first-child{background:url(../img/bl/bl_btn_img_left.gif) no-repeat left 0; top:230px; left:0;}
+.leture_img .bx-controls-direction a:first-child:hover,
+.leture_img .bx-controls-direction a:first-child:focus,
+.leture_img .bx-controls-direction a:first-child:active{background:url(../img/bl/bl_btn_hover_l.gif) no-repeat left 0;}
+.leture_img .bx-controls-direction a:last-child{background:url(../img/bl/bl_btn_img_right.gif) no-repeat right 0; top:230px; right:0;}
+.leture_img .bx-controls-direction a:last-child:hover,
+.leture_img .bx-controls-direction a:last-child:focus,
+.leture_img .bx-controls-direction a:last-child:active{background:url(../img/bl/bl_btn_hover_r.gif) no-repeat right 0;}
+
+/* 교육후기 수정 비밀번호 확인 */
+section .cont > div .modify_con {text-align:center; padding:50px 0; border-top:2px solid #666; border-bottom:1px solid #c8c8c8;}
+section .cont > div .modify_con label {display:block; font-size:18px; font-weight:500; color:#333; margin-bottom:30px;}
+section .cont > div .modify_con input {width:178px; height:28px; line-height:28px; border:1px solid #c8c8c8; padding:0 10px; font-weight:300; font-size:15px; color:#333;}
+
+/* 스타일가이드 */
+.style_guide .beforeAfter{position:relative; width:100%;}
+.style_guide .beforeAfter ul li img{width:100%;}
+.style_guide > .beforeAfter .bx-wrapper .bx-controls{position:absolute; top:20px; right:20px}
+.style_guide > .beforeAfter .bx-wrapper .bx-controls .bx-pager-item{float:left}
+.style_guide > .beforeAfter .bx-controls .bx-pager-item a{display:inline-block; text-indent:-9999em; width:12px; height:2px; background:#FFF; margin-left:5px; margin-top:1px;}
+.style_guide > .beforeAfter .bx-controls .bx-pager-item a.active{width:20px; height:4px; background:#b58913; margin-top:0}
+
+.style_guide > div.list_guide{border-top:2px solid #666; margin-top:40px;}
+div.list_guide > div.product_guide{border-bottom:1px solid #c8c8c8; padding:40px 20px; position:relative; overflow:hidden}
+div.list_guide > div.product_guide img{float:left; width:232px; height:230px;}
+div.product_guide > div.guide_cont{padding-left:271px}
+div.product_guide > div.guide_cont > span{font-size:24px; line-height:32px; color:#333; display:inline-block; padding-top:20px; font-weight:700}
+div.product_guide> div.guide_cont > p{font-size:20px; line-height:32px; color:#333; padding:19px 0 6px; font-weight:500}
+div.product_guide> div.guide_cont > ul{margin-left:16px; color:#666;}
+div.product_guide> div.guide_cont > ul li{font-size:15px; line-height:30px; list-style-type:decimal;  padding-left:3px; font-weight:300}
+
+/* 연혁 */
+section .cont > div .history .his_tab {overflow:hidden; margin-bottom:60px; position:relative;}
+section .cont > div .history .his_tab > a {display:inline-block; text-indent:-9999px; width:30px; height:40px; position:absolute; top:0;}
+section .cont > div .history .his_tab > a:first-child {background:url(../img/ico/ico_prev_histab.png) no-repeat; left:0;}
+section .cont > div .history .his_tab > a:first-child:hover,
+section .cont > div .history .his_tab > a:first-child:focus,
+section .cont > div .history .his_tab > a:first-child:active {background:url(../img/ico/ico_prev_histab_on.png) no-repeat;}
+section .cont > div .history .his_tab > a:last-child {background:url(../img/ico/ico_next_histab.png) no-repeat; right:0;}
+section .cont > div .history .his_tab > a:last-child:hover,
+section .cont > div .history .his_tab > a:last-child:focus,
+section .cont > div .history .his_tab > a:last-child:active {background:url(../img/ico/ico_next_histab_on.png) no-repeat;}
+section .cont > div .history .his_tab ul {display:inline-block; height:40px; overflow:hidden; margin-left:35px;}
+section .cont > div .history .his_tab ul li {float:left; display:inline-block; width:126px; text-align:center; margin-left:8px;}
+section .cont > div .history .his_tab ul li:first-child {margin-left:0;}
+section .cont > div .history .his_tab ul li a {display:inline-block; width:100%; height:36px; font-size:18px; font-weight:300; color:#666; border-bottom:2px solid #c8c8c8; padding-top:2px;}
+section .cont > div .history .his_tab ul li a:hover,
+section .cont > div .history .his_tab ul li a:focus,
+section .cont > div .history .his_tab ul li a:active,
+section .cont > div .history .his_tab ul li a.on {height:33px; font-weight:700; color:#b58913; border-bottom:5px solid #b58913;}
+section .cont > div .history .his_data {overflow:hidden;}
+section .cont > div .history .his_data h3 {font-size:40px; font-weight:500; color:#909090; line-height:33px; margin-bottom:0; display:inline-block; width:220px; float:left;}
+section .cont > div .history .his_data h3 span {font-size:54px; font-weight:500; color:#b58913; line-height:44px; margin-bottom:12px; display:inline-block;}
+section .cont > div .history .his_data strong {float:left; background:url(../img/bl/bl_dot03.gif) no-repeat 0 center; background-size:6px 2px; padding-left:43px; font-size:15px; font-weight:300; color:#666;}
+section .cont > div .history .his_data dl {width:430px; float:left;}
+section .cont > div .history .his_data dl dt {display:inline-block; font-size:20px; font-weight:500; color:#333; width:50px; float:left;}
+section .cont > div .history .his_data dl dd {font-size:15px; font-weight:300; color:#666; width:380px; line-height:25px; margin-bottom:25px; margin-top:-3px; padding-left:50px;}
+section .cont > div .history .his_data .img {display:inline-block; width:350px; float:left;}
+section .cont > div .history .his_data .img img {width:348px; height:auto; border:1px solid #c8c8c8; margin-bottom:8px;}
